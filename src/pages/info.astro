@@ -1,0 +1,126 @@
+---
+import Section from '../components/Section.astro';
+import SubSection from '../components/SubSection.astro';
+import Searchbar from '../components/Searchbar.astro';
+import CalloutContainer from '../components/CalloutContainer.astro';
+import CalloutCard from '../components/CalloutCard.astro';
+import Image from '../components/Image.astro';
+import Row from '../components/Row.astro';
+import Col from '../components/Col.astro';
+import Layout from '../layouts/Layout.astro';
+import DisplayTable from '../components/DisplayTable.astro';
+import InlineEquation from '../components/InlineEquation.astro';
+import DisplayEquation from '../components/DisplayEquation.astro';
+---
+
+<Layout title="TAM 251 - Fall 24">
+    <Row>
+		<Col values="6 md-4 lg-3">
+			<p class="mb-0 fw-bold"><u>General Info</u></p>
+			<ul>
+				<li><a href="#Website">Website</a></li>
+				<li><a href="#Description">Course description</a></li>
+				<li><a href="#Prereq">Prerequisites</a></li>
+				<li><a href="#RefText">Reference text</a></li>
+			</ul>
+		</Col>
+		<Col values="6 md-4 lg-3">
+			<p class="mb-0 fw-bold"><u>Grades</u></p>
+			<ul>
+				<li><a href="#Discussion">Discussions</a></li>
+				<li><a href="#Grading">Grading</a></li>
+			</ul>
+		</Col>
+		<Col values="6 md-4 lg-3">
+			<p class="mb-0 fw-bold"><u>Formal Assessment</u></p>
+			<ul>
+				<li><a href="#OfficeHours">Office Hours</a></li>
+			</ul>
+		</Col>
+		<Col values="6 md-4 lg-3">
+			<p class="mb-0 fw-bold"><u>Contact Info</u></p>
+			<ul>
+				<li><a href="#Piazza">Online forum</a></li>
+			</ul>
+		</Col>
+	</Row>
+
+	<h3><strong><a id="Lectures" name="Lectures" style="background-size: 16px;">Lectures</a>:</strong></h3>
+
+	<p><span style="background-color:#FFFF00">Prof. Golecki: MWF, 9-10 AM,&nbsp;</span><a href="http://illinois.edu/map/view?skinId=0&amp;ACTION=MAP&amp;buildingId=34"><u><span style="background-color:#FFFF00">Materials Science &amp; Eng Bld | Room 100</span></u></a></p>
+	
+	<p><a href="https://uofi.box.com/s/g7kf5pmo01pf7yuqfq07wfqppuzcqh76"><u>Lecture Notes</u></a></p>
+	
+	<p><a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182"><u>Lecture Recordings&#8203;</u></a></p>
+	
+	<h3><strong><a id="Website" name="Website">Website</a>:</strong></h3>
+	
+	<p>The official class website is <a href="http://courses.engr.illinois.edu/tam251/">http://courses.engr.illinois.edu/tam251/</a></p>
+	
+	<h3><strong><a id="Description" name="Description">Description</a>:</strong></h3>
+	
+	<p>Relationship between internal stresses and deformations produced by external forces acting on deformable bodies, and design principles based on mechanics of solids: normal stresses, shear stresses, and deformations produced by tensile, compressive, torsional, and bending loading of members; beam deflections; elastic energy and impact; multi-dimensional stress states; buckling of columns.</p>
+	
+	<h3><strong>Big Idea:</strong></h3>
+	
+	<p>Solid materials deform and break. The <em>extrinsic</em> relation of force and displacement is governed by <em>intrinsic</em> material measures of stress and strain. The challenge is to connect the <em>extrinsic</em> to the <em>intrinsic</em>.</p>
+	
+	<h3><strong><a id="Prereq" name="Prereq">Prerequisites</a>:</strong></h3>
+	
+	<p>TAM 210 or TAM 211.</p>
+	
+	<h3><strong><a id="RefText" name="RefText">Reference texts</a>:</strong></h3>
+	
+	<p >There is no required textbook for this class. However, theses texts are <strong><em>very</em></strong> useful</p>
+	
+	<ul style="font-family: NoticiaTextRegular, Arial, sans-serif; font-size: 14px;">
+		<li><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:14px">R. C. Hibbeler,&nbsp;<em>Mechanics of Materials</em>, 9th edition, Pearson, Prentice Hall, 2014.</span></span></li>
+		<li><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:14px">F. B. Beer, E. R. Johnston, J. T. DeWolf, and D. F. Mazurek,&nbsp;<em>Mechanics of Materials</em>, 7th edition, McGraw-Hill, 2015.</span></span></li>
+		<li><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:14px">R. R. Craig,&nbsp;<em>Mechanics of Materials</em>, 3rd edition, John Wiley &amp; Sons, 2011.</span></span></li>
+		<li><span style="font-family:noticiatextregular,arial,sans-serif; font-size:14px">S. Timoshenko,&nbsp;</span><em style="font-family:noticiatextregular,arial,sans-serif; font-size:14px">History of Strength of Materials</em><span style="font-family:noticiatextregular,arial,sans-serif; font-size:14px">, Dover Civil and Mechanical Engineering, 1983.</span></li>
+	</ul>
+	<!-- <h3><strong><a id="TAM2XXPolicies" name="TAM2XXPolicies">TAM 2XX Policies</a>:</strong></h3>
+	General TAM 2XX course policies may be found at: <a href="
+	http://mechref.engr.illinois.edu/pol/policies.html"> http://mechref.engr.illinois.edu/pol/policies.html</a> -->
+	
+	<h3><strong><a id="Grading" name="Grading">Grading</a>:</strong></h3>
+	
+	<p style="margin-top:0">The total score for the course is computed with the following weights:</p>
+	
+	<div class="d-flex flex-row">
+		<div class="px-3">
+			<p>Computer-based Quizzes (PraireLearn)</p>
+	<!-- <p style="padding-left: 60px;"><em>Quiz Grade = max([First Try, 1/3*(First Try) + 2/3*(Quiz Retry)]) </em></p> -->
+	
+			<p>Online Homework (PraireLearn)</p>
+			
+			<p>Discussion worksheets</p>
+			
+			<p>Lecture participation (iClicker)</p>
+			
+			<p>Final Exam</p>
+		</div>
+		<div>
+			<p>40%</p>
+			<!-- <p>&nbsp;</p> -->
+			
+			<p>15%</p>
+			
+			<p>10%</p>
+			
+			<p>5%</p>
+			
+			<p>30%</p>
+			</div>
+	</div>
+
+	
+	<p><strong>Retake quizzes:</strong>&nbsp;Optional retake quizzes are available in the week following each first-chance quiz. If you choose to take the retake quiz,&nbsp;the quiz score will be&nbsp;90% of the higher scores + 10% of the lower score (0.9*max(first_chance_score, retake_score)+0.1*min(first_chance_score, retake_score)). If you do not take the first-chance-quiz, then your score will be 90%&nbsp;of the retake score.</p>
+	
+	<h3><strong><a id="Discussion" name="Discussion">Discussion sections</a>:</strong></h3>
+	<!--Help for filling out the  <a href="CATMEinstructions.pdf">CATME</a> survey is here.-->
+	
+	<p>Discussion sections are held <span>according to the schedule below</span>.</p>
+
+
+</Layout>

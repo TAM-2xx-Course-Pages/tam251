@@ -1,0 +1,142 @@
+---
+import Navbar from '../components/Navbar.astro';
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="w-100">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image" href="/favicon2.png" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<title>{title}</title>
+
+		<link href="/bootstrap.min.css" rel="stylesheet">
+		<link href="/bootstrap-icons.min.css" rel="stylesheet">
+		<script src="/bootstrap.min.js" is:inline></script>
+		
+		<script src="/jquery-2.1.4.min.js" is:inline></script>
+		<script id="MathJax-script" src="/mathjax/tex-chtml.js" is:inline></script>
+
+		<link rel="stylesheet" href="/static/css/lightTheme.css" id="lightTheme">
+		<link rel="stylesheet" href="/static/css/darkTheme.css" id="darkTheme" disabled>
+
+		<link rel="stylesheet" href="/static/css/tables.css">
+
+		<script src="/static/js/themes.js" is:inline></script>
+		<link rel="stylesheet" href="/static/css/themes.css">
+		
+		<link rel="stylesheet" href="/static/css/main.css">
+		<link rel="stylesheet" href="/static/css/sidebar.css">
+
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2YD4TR8K2S"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-2YD4TR8K2S');
+		</script>
+	</head>
+	<body class="w-100">
+		<Navbar />
+		<div class="container-xxl mb-5 mt-3">
+			<slot />
+		</div>
+	</body>
+</html>
+
+<style is:global>
+	@font-face {
+		font-family: 'SourceSansPro';
+		font-style: normal;
+  		font-weight: 400;
+		src: url('/fonts/source-sans-pro/SourceSansPro-Regular.otf');
+	}
+
+	@font-face {
+		font-family: 'SourceSansPro';
+		font-style: bold;
+		font-weight: 700;
+		src: url('/fonts/source-sans-pro/SourceSansPro-Bold.otf');
+	}
+	
+	@font-face {
+		font-family: 'Montserrat';
+		font-style: bold;
+		font-weight: 700;
+		src: url('/fonts/Montserrat-Bold.ttf');
+	}
+
+	:root {
+		--illini-orange: #ff5f05;
+		--illini-blue: #13294B;
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+
+	}
+
+	mjx-container{
+		max-width: 90vw;
+	}
+
+	body {
+		font-size: 1.15rem;
+	}
+
+	.nosideborderleft{
+        border-left: 0px solid var(--bs-border-color) !important;
+    }
+
+    .nosideborderright{
+        border-right: 0px solid var(--bs-border-color);
+    }
+
+	.callout-grid{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.content{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+
+	.subsection{
+        color: var(--text-main);
+    }
+
+    .subsubsection{
+        color:var(--text-secondary);
+    }
+
+	.subsubsubsection{
+        color:var(--text-tertiary);
+    }
+
+	@media (min-width: 1200px){
+		.content{
+			grid-template-columns: 1fr 5fr;
+		}
+	}
+
+	@media (min-width: 992px){
+		.callout-grid{
+			grid-template-columns: 20fr 7fr;
+		}
+	}
+</style>

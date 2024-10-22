@@ -1,0 +1,23 @@
+ul a{
+    color: var(--bs-text-color);
+}
+
+ul a:hover{
+    color: var(--altgeld-orange);
+}
+
+tbody > tr > th{
+    border-right: 1px solid var(--bs-border-color);
+}
+
+thead > tr > th:first-child{
+    border-right: 1px solid var(--bs-border-color);
+}
+
+thead > tr > th{
+    text-align: center;
+}
+
+tbody > tr > td{
+    text-align: center;
+}
