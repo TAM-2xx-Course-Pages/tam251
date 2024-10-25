@@ -14,37 +14,78 @@ import DisplayTable from '../components/DisplayTable.astro';
 <style>
     ul a{
         color: var(--bs-text-color);
+		transition: font-size linear .2s;
     }
 
-    ul a:hover{
-        color: var(--altgeld-orange);
-    }
+	ul a:hover{
+		color: var(--altgeld-orange);
+	}
+
+	#ref-pages-ad{
+		transition: all linear .2s;
+	}
+
+	@media(width >= 768px){
+		ul a:hover{
+			transform: scale(1.05);
+			font-size: 1.17rem;
+		}
+	}
+
+	@media(width >= 992px){
+		#ref-pages-ad:hover{
+			transform: scale(1.05);
+			margin-left: .5rem;
+			margin-bottom: .5rem;
+		}
+	}
 </style>
 
 <Layout title="TAM 251 - Fall 24">
     <p>Welcome! This is the official course website for TAM 251 at UIUC in Fall 2024.</p>
 
-    <p class="mb-0">As well as the pages on this website, this course uses:</p>
-
-    <ul class="mt-0">
-        <li><a href="https://campuswire.com/p/GF62988DA">Discussion forum on Campuswire&nbsp;</a>(group code: 8823)</li>
-        <li><a href="https://join.iclicker.com/KSBG">iclicker for attendance and class participation</a></li>
-        <li><a href="https://canvas.illinois.edu/courses/50000/gradebook">Gradebook on Canvas</a></li>
+    
+	<h2 class="h3 fw-bold" id="assignments">Graded assignments:</h2>
+	<p class="mb-0">This course uses the following as part of your grade:</p>
+	<ul class="mt-0">
+        <li><a href="https://join.iclicker.com/KSBG">iClicker for attendance and class participation</a></li>
         <li><a href="https://us.prairielearn.com">Homework problems on PrairieLearn </a></li>
         <li><a href="https://us.prairietest.com/">Register for quizzes at&nbsp;CBTF (Computer-Based Testing Facility) via PrairieTest</a>
         <ul>
             <li><a href="https://www.prairietest.org">&#8203;</a><a href="http://mechref.engr.illinois.edu/pol/pltips.html">PrairieLearn/CBTF Tips</a></li>
         </ul>
         </li>
-        <li><a href="https://www.mechref.org/sol/">Solid mechanics reference pages (still under construction!)</a></li>
+    </ul>
+	<p>Access the gradebook on the course <a href="https://canvas.illinois.edu/courses/50000/gradebook">Canvas page</a>.</p>
+
+	<h2 class="h3 fw-bold" id="resources">Course material & helpful resources:</h2>
+	<p class="mb-0">The following links provide access to resources meant to help you succeed in the course, as well as the material covered in class.</p>
+    <ul class="mt-0">
+        <li><a href="https://campuswire.com/p/GF62988DA">Discussion forum on Campuswire&nbsp;</a>(group code: 8823)</li>
         <li><a href="https://uofi.box.com/s/g7kf5pmo01pf7yuqfq07wfqppuzcqh76"><u>Lecture Notes</u></a></li>
-        <li><u><u><a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182"><u>Lecture Recordings&#8203;</u></a>&#8203;</u></u></li>
+        <li><u><a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182"><u>Lecture Recordings&#8203;</u></a>&#8203;</u></li>
     </ul>
 
+	<div class="d-flex flex-column flex-lg-row flex-fill">
+		<p class="flex-grow pe-0 pe-lg-2">Access the course reference pages, a free and interactive short-form textbook designed at Illinois, at this link:</p>
+		<a href="https://mechref.org/sol" class="text-black text-decoration-none" id="ref-pages-ad">
+			<div class="d-flex align-items-center flex-column" style="border: 2px solid var(--bs-border-color); border-radius: 10px;">
+				<div class="d-flex flex-row">
+					<img src="/image.png" alt="Reference page animation example" style="border: 2px solid white; border-radius: 10px;" height="300" style="max-height: 300px;">
+					<img src="/image2.png" alt="Reference page animation example" style="border: 2px solid white; border-radius: 10px;" height="300" style="max-height: 300px;">
+				</div>
+				
+				<p class="fw-bold m-0">Click here!</p>
+			</div>
+		</a>
+		
+		
+	</div>
+	
     
     <p>Please fill out Excused Absence Requests for TAM 251 <a href="https://forms.office.com/r/e8whXc37An">here</a>.</p>
 
-    <h2 class="h4 fw-bold mt-4">TAM 251 Course Organization:</h2>
+    <h2 class="h4 fw-bold mt-4" id="calendar">TAM 251 Course Organization:</h2>
 
     <p><em>This is a living document providing the general structure of the course: All assessments subject to change.</em></p>
 

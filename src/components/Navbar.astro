@@ -173,36 +173,10 @@
         background-color: white;
     }
 
-    .statics-menu{
-        columns: 3;
-    }
-    
-
-    @media (width <= 768px){
-        .statics-menu{
-            columns: 2;
-        }
-    }
-
-    .dynamics-menu{
-        column-count: 2;
-        
-    }
-
     .menu li{
         page-break-inside: avoid;
         margin: 0 1rem .25rem 1rem;
         padding-left: .5rem;
-    }
-
-    .solids-menu{
-        columns: 2;
-    }
-
-    @media (width <= 578px){
-        .course-menu{
-            columns: 1;
-        }
     }
 
     ol li::marker {
@@ -292,7 +266,7 @@
                     </div>
                     <div class="site_name">
                         <a href="/" aria-label="Mechanical Science &amp; Engineering" class="site_name">
-                            <span>TAM 251: Introductory Solid Mechanics</span>
+                            <span>TAM 251: Introductory Solid Mechanics, Fall 24</span>
                         </a>
                     </div>
                 </div>
@@ -313,15 +287,60 @@
 <nav class="navbar navbar-expand-lg py-0 d-flex w-100" aria-label="Main Menu">
     <div class="navbar-collapse collapse pt-2 pb-2 pb-lg-0" id="mainnav">
         <ul class="navbar-nav w-100">
-            <li class="nav-item">
-                <a class="nav-link" aria-haspopup="true" aria-expanded="false" aria-label="Home" href="/">
+            <li class="dropdown mega nav-item">
+                <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Home">
                     <span>Home</span>
                 </a>
+                <div class="dropdown-menu tile-list px-2" id="mainnav-home">
+                    <section class="tile menu white-box col">
+                    <h2><a href="/" aria-label="Home">Home</a></h2>
+                        <ul style="column-fill: balance;" class="course-menu">
+                            <li><a href="/#assignments">Graded assignments</a></li>
+                            <li><a href="/#resources">Material & Resources</a></li>
+                            <li><a href="/#calendar">Course organization</a></li>
+                        </ul>
+                    </section>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" aria-haspopup="true" aria-expanded="false" aria-label="Info" href="/info">
+            <li class="dropdown mega nav-item">
+                <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Info">
                     <span>Info</span>
                 </a>
+                <div class="dropdown-menu tile-list px-2" id="mainnav-info">
+                    <section class="tile menu white-box col">
+                    <h2><a href="/info" aria-label="Info">Info</a></h2>
+                        <ul style="column-fill: balance;column-count:2;" class="course-menu">
+                            <li>
+                                General Info:
+                                <ul>
+                                    <li><a href="/info#Website">Website</a></li>
+                                    <li><a href="/info#Description">Material & Resources</a></li>
+                                    <li><a href="/info#Prereq">Prerequisites</a></li>
+                                    <li><a href="/info#RefText">Reference text</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                Grades:
+                                <ul>
+                                    <li><a href="/info#Grading">Grading</a></li>
+                                    <li><a href="/info#Discussion">Discussions</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                Formal Assessment:
+                                <ul>
+                                    <li><a href="/info#OfficeHours">Office Hours</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                Contact Info:
+                                <ul>
+                                    <li><a href="/info#Piazza">Online forum</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" aria-haspopup="true" aria-expanded="false" aria-label="Home" href="/policies">

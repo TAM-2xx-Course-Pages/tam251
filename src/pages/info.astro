@@ -14,9 +14,10 @@ import DisplayEquation from '../components/DisplayEquation.astro';
 ---
 
 <Layout title="TAM 251 - Fall 24">
+	<h2 class="h3 fw-bold">Table of contents:</h2>
     <Row>
 		<Col values="6 md-4 lg-3">
-			<p class="mb-0 fw-bold"><u>General Info</u></p>
+			<p class="mb-0 fw-bold">General Info</p>
 			<ul>
 				<li><a href="#Website">Website</a></li>
 				<li><a href="#Description">Course description</a></li>
@@ -25,20 +26,20 @@ import DisplayEquation from '../components/DisplayEquation.astro';
 			</ul>
 		</Col>
 		<Col values="6 md-4 lg-3">
-			<p class="mb-0 fw-bold"><u>Grades</u></p>
+			<p class="mb-0 fw-bold">Grades</p>
 			<ul>
-				<li><a href="#Discussion">Discussions</a></li>
 				<li><a href="#Grading">Grading</a></li>
+				<li><a href="#Discussion">Discussions</a></li>
 			</ul>
 		</Col>
 		<Col values="6 md-4 lg-3">
-			<p class="mb-0 fw-bold"><u>Formal Assessment</u></p>
+			<p class="mb-0 fw-bold">Formal Assessment</p>
 			<ul>
 				<li><a href="#OfficeHours">Office Hours</a></li>
 			</ul>
 		</Col>
 		<Col values="6 md-4 lg-3">
-			<p class="mb-0 fw-bold"><u>Contact Info</u></p>
+			<p class="mb-0 fw-bold">Contact Info</p>
 			<ul>
 				<li><a href="#Piazza">Online forum</a></li>
 			</ul>
@@ -71,13 +72,13 @@ import DisplayEquation from '../components/DisplayEquation.astro';
 	
 	<h3><strong><a id="RefText" name="RefText">Reference texts</a>:</strong></h3>
 	
-	<p >There is no required textbook for this class. However, theses texts are <strong><em>very</em></strong> useful</p>
+	<p class="m-0">There is no required textbook for this class. However, theses texts are <strong><em>very</em></strong> useful</p>
 	
-	<ul style="font-family: NoticiaTextRegular, Arial, sans-serif; font-size: 14px;">
-		<li><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:14px">R. C. Hibbeler,&nbsp;<em>Mechanics of Materials</em>, 9th edition, Pearson, Prentice Hall, 2014.</span></span></li>
-		<li><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:14px">F. B. Beer, E. R. Johnston, J. T. DeWolf, and D. F. Mazurek,&nbsp;<em>Mechanics of Materials</em>, 7th edition, McGraw-Hill, 2015.</span></span></li>
-		<li><span style="font-family:arial,helvetica,sans-serif"><span style="font-size:14px">R. R. Craig,&nbsp;<em>Mechanics of Materials</em>, 3rd edition, John Wiley &amp; Sons, 2011.</span></span></li>
-		<li><span style="font-family:noticiatextregular,arial,sans-serif; font-size:14px">S. Timoshenko,&nbsp;</span><em style="font-family:noticiatextregular,arial,sans-serif; font-size:14px">History of Strength of Materials</em><span style="font-family:noticiatextregular,arial,sans-serif; font-size:14px">, Dover Civil and Mechanical Engineering, 1983.</span></li>
+	<ul>
+		<li>R. C. Hibbeler,&nbsp;<em>Mechanics of Materials</em>, 9th edition, Pearson, Prentice Hall, 2014.</li>
+		<li>F. B. Beer, E. R. Johnston, J. T. DeWolf, and D. F. Mazurek,&nbsp;<em>Mechanics of Materials</em>, 7th edition, McGraw-Hill, 2015.</li>
+		<li>R. R. Craig,&nbsp;<em>Mechanics of Materials</em>, 3rd edition, John Wiley &amp; Sons, 2011.</li>
+		<li>S. Timoshenko,&nbsp;<em>History of Strength of Materials</em>, Dover Civil and Mechanical Engineering, 1983.</span></li>
 	</ul>
 	<!-- <h3><strong><a id="TAM2XXPolicies" name="TAM2XXPolicies">TAM 2XX Policies</a>:</strong></h3>
 	General TAM 2XX course policies may be found at: <a href="
@@ -122,5 +123,248 @@ import DisplayEquation from '../components/DisplayEquation.astro';
 	
 	<p>Discussion sections are held <span>according to the schedule below</span>.</p>
 
+	<DisplayTable id="discussion-staffing">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>11-12</th>
+				<td>&nbsp;</td>
+				<td>
+				<p style="margin: 0px;">ADF</p>
+	
+				<p style="margin: 0px;"><em>TA: Junren</em></p>
+	
+				<p style="margin: 0px;"><em>CA: Garrett, Chris</em></p>
+				</td>
+			</tr>
+			<tr>
+				<th>12-1</th>
+				<td>
+				<p style="margin:0;">&nbsp;</p>
+				</td>
+				<td>
+				<p style="margin: 0px;">ADG</p>
+	
+				<p style="margin: 0px;"><em>TA: Junren</em></p>
+	
+				<p style="margin: 0px;"><em>CA: Max, Alejandra</em></p>
+				</td>
+			</tr>
+			<tr>
+				<th>1-2</th>
+				<td>
+				<p style="margin:0;">ADA</p>
+	
+				<p style="margin:0;"><em>TA: Pranto</em></p>
+	
+				<p style="margin:0;"><em>CA: Max, Michael</em></p>
+				</td>
+				<td>
+				<p style="margin: 0px;">ADH</p>
+	
+				<p style="margin: 0px;"><em>TA: Junren</em></p>
+	
+				<p style="margin: 0px;"><em>CA: David, Garrett</em></p>
+				</td>
+			</tr>
+			<tr>
+				<th>2-3</th>
+				<td>
+				<p style="margin:0;">ADB</p>
+	
+				<p style="margin: 0px;"><em>TA: Taewoo</em></p>
+	
+				<p style="margin: 0px;"><em>CA: Michael, Chris</em></p>
+				</td>
+				<td>
+				<p style="margin:0;">&nbsp;</p>
+				</td>
+			</tr>
+			<tr>
+				<th>3-4</th>
+				<td>
+				<p style="margin:0;">ADC</p>
+	
+				<p style="margin: 0px;"><em>TA: Zeke</em></p>
+	
+				<p style="margin: 0px;"><em>CA: David, Alejandra</em></p>
+				</td>
+				<td>
+				<p style="margin:0;">&nbsp;</p>
+				</td>
+			</tr>
+			<tr>
+				<th>4-5</th>
+				<td>
+				<p style="margin:0;">ADD</p>
+	
+				<p style="margin: 0px;"><em>TA: Zeke</em></p>
+	
+				<p style="margin: 0px;"><em>CA:&nbsp;David, Garrett</em></p>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</DisplayTable>
+
+	<h3><strong><a id="OfficeHours" name="OfficeHours">Office hours</a>:</strong></h3>
+
+	<p>Professor Golecki:&nbsp;office hours by appointment.&nbsp;</p>
+
+	<p>Teaching and course assistant: office hours are held in 1043 LuMEB&nbsp;according to the schedule below. Office hours start from the second week on Sept. 3rd.&nbsp;</p>
+
+	<DisplayTable id="office-hour-staffing">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>5-6</th>
+				<td style="text-align: center;">
+				<p>Pranto</p>
+	
+				<p>Max</p>
+	
+				<p>Garrett</p>
+				</td>
+				<td style="text-align: center;">
+				<p>Junren</p>
+	
+				<p>Alejandra</p>
+	
+				<p>David</p>
+				</td>
+				<td style="text-align: center;">
+				<p>Taewoo</p>
+	
+				<p>David</p>
+	
+				<p>Garrett</p>
+				</td>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Junren</p>
+	
+				<p style="text-align: center;">Alejandra</p>
+	
+				<p style="text-align: center;">Michael</p>
+				</td>
+				<td style="text-align: center;">
+				<p>Zeke</p>
+	
+				<p>Michael</p>
+	
+				<p>Max</p>
+				</td>
+			</tr>
+			<tr>
+				<th>6-7</th>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Pranto</p>
+	
+				<p style="text-align: center;">Max</p>
+	
+				<p style="text-align: center;">Garrett</p>
+				</td>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Junren</p>
+	
+				<p style="text-align: center;">Alejandra</p>
+	
+				<p style="text-align: center;">David</p>
+				</td>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Taewoo</p>
+	
+				<p style="text-align: center;">David</p>
+	
+				<p style="text-align: center;">Garrett</p>
+				</td>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Junren</p>
+	
+				<p style="text-align: center;">Alejandra</p>
+	
+				<p style="text-align: center;">Michael</p>
+				</td>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Zeke</p>
+	
+				<p style="text-align: center;">Michael</p>
+				</td>
+			</tr>
+		</tbody>
+	</DisplayTable>
+
+<h3><strong><a id="Piazza" name="Piazza">Online forum (Campuswire)</a>:</strong></h3>
+
+<p>TAs and CAs monitor Campuswire according to the following schedule:</p>
+
+<DisplayTable id="campuswire-staffing">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Sunday</th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+			<th>Saturday</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td>
+			<p><span style="text-align:center">Pranto</span></p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td>
+			<p><span style="text-align:center">Taewoo</span></p>
+
+			<p><span style="text-align:center">Garrett</span></p>
+			</td>
+			<td>
+			<p><span style="text-align:center">Junren</span></p>
+
+			<p><span style="text-align:center">Max</span></p>
+			</td>
+			<td>
+			<p><span style="text-align:center">Taewoo</span></p>
+
+			<p><span style="text-align:center">Michael</span></p>
+			</td>
+			<td>
+			<p>Junren</p>
+
+			<p>Alejandra</p>
+			</td>
+			<td>
+			<p><span style="text-align:center">Zeke</span></p>
+
+			<p style="text-align: center;"><span style="text-align:center">David</span></p>
+			</td>
+			<td>
+			<p><span style="text-align:center">Pranto</span></p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</DisplayTable>
 
 </Layout>
