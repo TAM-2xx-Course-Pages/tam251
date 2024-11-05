@@ -12,10 +12,12 @@
     color: var(--illini-orange);
 }
 
-.bg-blue{
-    background-color: var(--illini-blue);
+ul a{
+    color: var(--bs-text-color);
 }
 
-.bg-yellow{
-    background-color: #fffff0;
+ul a:hover{
+    color: var(--altgeld-orange);
 }
+
+

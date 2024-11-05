@@ -47,8 +47,10 @@ const { title } = Astro.props;
 	</head>
 	<body class="w-100">
 		<Navbar />
-		<div class="container-xl mb-5 mt-3">
-			<slot />
+		<div class="d-flex justify-content-center w-100">
+			<div class="max-width1160 mb-5 mt-3">
+				<slot />
+			</div>
 		</div>
 		<Footer />
 	</body>
@@ -139,6 +141,16 @@ const { title } = Astro.props;
 	@media (min-width: 992px){
 		.callout-grid{
 			grid-template-columns: 20fr 7fr;
+		}
+	}
+
+	.max-width1160{
+		max-width: 1140px;
+	}
+
+	@media (width <= 1140px){
+		.max-width1160{
+			width: 100%;
 		}
 	}
 </style>
