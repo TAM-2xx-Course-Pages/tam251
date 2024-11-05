@@ -1,0 +1,74 @@
+---
+import Section from '../components/Section.astro';
+import SubSection from '../components/SubSection.astro';
+import Searchbar from '../components/Searchbar.astro';
+import CalloutContainer from '../components/CalloutContainer.astro';
+import CalloutCard from '../components/CalloutCard.astro';
+import Image from '../components/Image.astro';
+import Row from '../components/Row.astro';
+import Col from '../components/Col.astro';
+import Layout from '../layouts/Layout.astro';
+import DisplayTable from '../components/DisplayTable.astro';
+---
+
+<style>
+	.img-grid{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 250px);
+	}
+
+	
+
+	.img-grid > .img-container > img{
+		max-height: 250px;
+		object-fit: contain;
+		padding-right: 1rem;
+	}
+</style>
+
+<Layout title="TAM 251 - Fall 24">
+    <h3>
+		<strong>
+			<a id="instructor" name="Instructor">Instructor</a>:
+		</strong>
+	</h3>
+
+	<div class="img-grid">
+		<div class="img-container">
+			<img src="/photos/GoleckiTom.jpg" alt="" >
+		</div>
+	</div>
+
+	<h3>
+		<strong>
+			<a id="tas" name="tas">Teaching Assistants</a>:
+		</strong>
+	</h3>
+
+	<div class="img-grid">
+		<div class="img-container">
+			<img src="/photos/EzekielHsieh.jpg" alt="" >
+			<p></p>
+		</div>
+		<div class="img-container">
+			<img src="/photos/JunrenRan.jpg" alt="" >
+			<p></p>
+		</div>
+		<div class="img-container">
+			<img src="/photos/PrantoKarua2.jpg" alt="" >
+			<p></p>
+		</div>
+		<div class="img-container">
+			<img src="/photos/TaewooKim.jpg" alt="" >
+			<p></p>
+		</div>
+	</div>
+
+	<h3>
+		<strong>
+			<a id="cas" name="cas">Course Assistants</a>:
+		</strong>
+	</h3>
+
+	
+</Layout>
