@@ -1,9 +1,9 @@
 ---
-const { id, class_=""} = Astro.props;
+const { id, class_="", override='false'} = Astro.props;
 ---
 
 <div id={id + '_container'}>
-    <table id={id} class={class_ + ' table w-100 table-striped'} style="table-layout: auto;" >
+    <table id={id} class={override == 'false' ? class_ + ' table w-100 table-striped' : class_} style="table-layout: auto;" >
         <slot/>
     </table>
 </div>

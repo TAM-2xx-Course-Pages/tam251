@@ -13,29 +13,42 @@ import DisplayTable from '../components/DisplayTable.astro';
 
 <style>
 	.img-grid{
-		display: grid;
-		grid-template-columns: repeat(auto-fit, 250px);
+		margin-bottom: 2rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
-	
+	.img-item{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-right: .5rem;
+	}
 
-	.img-grid > .img-container > img{
+	.img-item > img{
 		max-height: 250px;
-		object-fit: contain;
-		padding-right: 1rem;
 	}
+
+	.img-item > img[professor]{
+		max-height: 350px;
+	}
+
+
+
 </style>
 
 <Layout title="TAM 251 - Fall 24">
     <h3>
 		<strong>
-			<a id="instructor" name="Instructor">Instructor</a>:
+			<a id="instructor" name="instructor">Instructor</a>:
 		</strong>
 	</h3>
 
 	<div class="img-grid">
-		<div class="img-container">
-			<img src="/photos/GoleckiTom.jpg" alt="" >
+		<div class="img-item">
+			<img src="http://courses.grainger.illinois.edu/tam251/fa2024/photos/GoleckiTom.jpg" professor />
+			<p>Tom Golecki</p>
 		</div>
 	</div>
 
@@ -46,21 +59,21 @@ import DisplayTable from '../components/DisplayTable.astro';
 	</h3>
 
 	<div class="img-grid">
-		<div class="img-container">
-			<img src="/photos/EzekielHsieh.jpg" alt="" >
-			<p></p>
+		<div class="img-item">
+			<img src="http://courses.grainger.illinois.edu/tam251/fa2024/photos/EzekielHsieh.jpg" />
+			<p>Ezekiel Hsieh</p>
 		</div>
-		<div class="img-container">
-			<img src="/photos/JunrenRan.jpg" alt="" >
-			<p></p>
+		<div class="img-item">
+			<img src="http://courses.grainger.illinois.edu/tam251/fa2024/photos/JunrenRan.jpg" />
+			<p>Junren Ran</p>
 		</div>
-		<div class="img-container">
-			<img src="/photos/PrantoKarua2.jpg" alt="" >
-			<p></p>
+		<div class="img-item">
+			<img src="http://courses.grainger.illinois.edu/tam251/fa2024/photos/PrantoKarua2.jpg" />
+			<p>Pranto Karua</p>
 		</div>
-		<div class="img-container">
-			<img src="/photos/TaewooKim.jpg" alt="" >
-			<p></p>
+		<div class="img-item">
+			<img src="http://courses.grainger.illinois.edu/tam251/fa2024/photos/TaewooKim.jpg" />
+			<p>Taewoo Kim</p>
 		</div>
 	</div>
 
@@ -70,5 +83,27 @@ import DisplayTable from '../components/DisplayTable.astro';
 		</strong>
 	</h3>
 
+	<div class="img-grid">
+		<div class="img-item">
+			<img src="http://courses.grainger.illinois.edu/tam251/fa2024/photos/AlejandraPalafox2.jpg" />
+			<p>Alejandra Palafox</p>
+		</div>
+		<div class="img-item">
+			<img src="http://courses.grainger.illinois.edu/tam251/fa2024/photos/Chris.jpg" />
+			<p>Chris Raymond-Bertrand</p>
+		</div>
+		<div class="img-item">
+			<img src="http://courses.grainger.illinois.edu/tam251/fa2024/photos/GarrettSigrist.jpg" />
+			<p>Garrett Sigrist</p>
+		</div>
+		<div class="img-item">
+			<img src="http://courses.grainger.illinois.edu/tam251/fa2024/photos/MaximusEhrlich.jpg" />
+			<p>Maximus Ehrlich</p>
+		</div>
+		<div class="img-item">
+			<img src="http://courses.grainger.illinois.edu/tam251/fa2024/photos/MichaelWalczuk.jpg" />
+			<p>Michael Walczuk</p>
+		</div>
+	</div>
 	
 </Layout>

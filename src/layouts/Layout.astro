@@ -145,12 +145,14 @@ const { title } = Astro.props;
 	}
 
 	.max-width1160{
-		max-width: 1140px;
+		width: 1140px;
 	}
 
-	@media (width <= 1140px){
+	@media (width <= calc(1140px + 2rem)){
 		.max-width1160{
 			width: 100%;
+			padding-right: 1rem;
+			padding-left: 1rem;
 		}
 	}
 </style>

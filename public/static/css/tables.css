@@ -1,4 +1,9 @@
-tbody > tr > th{
+tbody > tr > th:first-child{
+    border-right: 1px solid var(--bs-border-color);
+    text-align: center;
+}
+
+table.first-bordered > tbody > tr > td[rowspan="7"]{
     border-right: 1px solid var(--bs-border-color);
 }
 
