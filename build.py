@@ -99,7 +99,6 @@ links_to_replace = {
     "href=\"/static/css/themes.css\"": "href=\"./static/css/themes.css\"",
     "href=\"/static/css/sidebar.css\"": "href=\"./static/css/sidebar.css\"",
     "href=\"/static/css/tables.css\"": "href=\"./static/css/tables.css\"",
-    'href="/"': 'href="./index.html"',
     'src="/image.png"': 'src="./image.png"',
     'src="/image2.png"': 'src="./image2.png"',
 }
@@ -118,13 +117,19 @@ for page in pages:
         data = data.replace(wrong, correct)
 
     for p in pages:
-        if page == p: continue
+        if p == 'index.html':
+            link_name1 = 'href="/"'
+            link_name2 = 'href="/#'
 
-        link_name1 = '"/' + p.replace('.html', '') + '"'
-        link_name2 = '"/' + p.replace('.html', '') + '#'
+            data = data.replace(link_name1, 'href="./index.html"')
+            data = data.replace(link_name2, 'href="./index.html#')
+        else:
+            link_name1 = '"/' + p.replace('.html', '') + '"'
+            link_name2 = '"/' + p.replace('.html', '') + '#'
 
-        data = data.replace(link_name1, './'+p)
-        data = data.replace(link_name2, './'+p+"#")
+            data = data.replace(link_name2, '"./'+p+'#')
+            data = data.replace(link_name1, '"./'+p + '"')
+        
     
     with open(os.path.join(home, page), 'w') as file:
         file.write(data)
