@@ -101,6 +101,7 @@ links_to_replace = {
     "href=\"/static/css/tables.css\"": "href=\"./static/css/tables.css\"",
     'src="/image.png"': 'src="./image.png"',
     'src="/image2.png"': 'src="./image2.png"',
+    'src="/blocki.png"': 'src="./blocki.png"',
 }
 
 pages = [p for p in os.listdir('./dist') if p[-4:] == 'html']
