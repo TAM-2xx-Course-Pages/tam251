@@ -2,8 +2,6 @@
 import Section from '../components/Section.astro';
 import SubSection from '../components/SubSection.astro';
 import Searchbar from '../components/Searchbar.astro';
-import CalloutContainer from '../components/CalloutContainer.astro';
-import CalloutCard from '../components/CalloutCard.astro';
 import Image from '../components/Image.astro';
 import Row from '../components/Row.astro';
 import Col from '../components/Col.astro';
@@ -39,6 +37,36 @@ import DisplayTable from '../components/DisplayTable.astro';
 			margin-bottom: .5rem;
 		}
 	}
+
+	div.grid{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 230px);
+		grid-auto-rows: 1fr;
+		gap: 1rem;
+	}
+
+	.main-cards{
+		padding: .5rem;
+		width: 100%;
+		background-color: #f0f0d0;
+		border: 2px solid var(--bs-border-color); 
+		border-radius: 10px;
+		text-decoration: none;
+		color: black;
+		transition: all linear .1s;
+	}
+
+	.main-cards:hover{
+		transform: scale(1.05);
+		margin-bottom: .5rem;
+	}
+
+	.main-cards img{
+		max-height: calc(230px - 1rem);
+		display: block;
+		object-fit: contain;
+		width: 100%;
+	}
 </style>
 
 <Layout title="TAM 251 - Fall 24">
@@ -46,6 +74,21 @@ import DisplayTable from '../components/DisplayTable.astro';
 
     
 	<h2 class="h3 fw-bold" id="assignments">Graded assignments:</h2>
+
+	<div class="grid">
+		<a class="main-cards" href="https://join.iclicker.com/KSBG">
+			<img src="/public/iclicker.png" alt="iClicker Logo" >
+			<p class="fw-bold text-center m-0">iClicker</p>
+			<p class="text-center m-0">For attendance and class participation</p>
+		</a>
+		<a class="main-cards" href="https://join.iclicker.com/KSBG">
+			<img src="/public/pl.png" alt="PrairieLearn Logo" style="background-color: #052c65; padding: .5rem; border-radius: .5rem;">
+			<p class="fw-bold text-center m-0">PrairieLearn</p>
+			<p class="text-center m-0">Homeworks and quizzes</p>
+		</a>
+
+	</div>
+
 	<p class="mb-0">This course uses the following as part of your grade:</p>
 	<ul class="mt-0">
         <li><a href="https://join.iclicker.com/KSBG">iClicker for attendance and class participation</a></li>
