@@ -20,4 +20,7 @@ ul a:hover{
     color: var(--altgeld-orange);
 }
 
+.themed-text{
+    color: var(--bs-text-body);
+}
 

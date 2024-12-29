@@ -62,7 +62,7 @@ import DisplayTable from '../components/DisplayTable.astro';
 	}
 
 	.main-cards img{
-		max-height: calc(230px - 1rem);
+		height: calc(230px - 1rem);
 		display: block;
 		object-fit: contain;
 		width: 100%;
@@ -73,43 +73,88 @@ import DisplayTable from '../components/DisplayTable.astro';
     <p>Welcome! This is the official course website for TAM 251 at UIUC in Fall 2024.</p>
 
     
-	<h2 class="h3 fw-bold" id="assignments">Graded assignments:</h2>
+	<SubSection id="assignments" title="Graded assignments">
+	
+	<div class="d-flex justify-content-between">
+		<p class="mb-0">This course uses the following resources as part of your grade:</p>
+		<div class="form-check form-switch">
+			
+			<input class="form-check-input simp-btn" type="checkbox" role="switch" onchange="toggle_simplified_view(this);">
+			<label class="form-check-label" style="text-wrap: nowrap;">Simplified view:</label>
+		</div>
+	</div>
 
-	<div class="grid">
+	
+	<div class="grid card-grid-fancy">
 		<a class="main-cards" href="https://join.iclicker.com/KSBG">
 			<img src="/public/iclicker.png" alt="iClicker Logo" >
 			<p class="fw-bold text-center m-0">iClicker</p>
 			<p class="text-center m-0">For attendance and class participation</p>
 		</a>
-		<a class="main-cards" href="https://join.iclicker.com/KSBG">
+		<a class="main-cards" href="https://us.prairielearn.com">
 			<img src="/public/pl.png" alt="PrairieLearn Logo" style="background-color: #052c65; padding: .5rem; border-radius: .5rem;">
 			<p class="fw-bold text-center m-0">PrairieLearn</p>
-			<p class="text-center m-0">Homeworks and quizzes</p>
+			<p class="text-center m-0">Homeworks and labs</p>
 		</a>
-
+		<a class="main-cards" href="https://us.prairietest.com">
+			<img src="/public/prairietest.ico" alt="PrairieTest Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;">
+			<p class="fw-bold text-center m-0">PrairieTest</p>
+			<p class="text-center m-0">Register for quizzes</p>
+		</a>
+		<a class="main-cards" href="https://canvas.illinois.edu/courses/50000/gradebook">
+			<img src="/public/blocki2.png" alt="Illinois Canvas Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;">
+			<p class="fw-bold text-center m-0">Canvas</p>
+			<p class="text-center m-0">Course gradebook</p>
+		</a>
 	</div>
 
-	<p class="mb-0">This course uses the following as part of your grade:</p>
-	<ul class="mt-0">
+	<ul class="mt-0 card-grid-simple">
         <li><a href="https://join.iclicker.com/KSBG">iClicker for attendance and class participation</a></li>
         <li><a href="https://us.prairielearn.com">Homework problems on PrairieLearn </a></li>
         <li><a href="https://us.prairietest.com/">Register for quizzes at&nbsp;CBTF (Computer-Based Testing Facility) via PrairieTest</a>
         <ul>
             <li><a href="https://www.prairietest.org">&#8203;</a><a href="http://mechref.engr.illinois.edu/pol/pltips.html">PrairieLearn/CBTF Tips</a></li>
         </ul>
+		<li><a href="https://canvas.illinois.edu/courses/50000/gradebook">Access the gradebook on the course Canvas page</a></li>
         </li>
     </ul>
-	<p>Access the gradebook on the course <a href="https://canvas.illinois.edu/courses/50000/gradebook">Canvas page</a>.</p>
 
-	<h2 class="h3 fw-bold" id="resources">Course material & helpful resources:</h2>
-	<p class="mb-0">The following links provide access to resources meant to help you succeed in the course, as well as the material covered in class.</p>
-    <ul class="mt-0">
+	</SubSection>
+	<SubSection id="resources" title="Course material & helpful resources">
+
+	<div class="d-flex justify-content-between mt-3">
+		<p class="mb-0">The following links provide access to resources meant to help you succeed in the course, as well as the material covered in class.</p>
+		<div class="form-check form-switch">
+				
+			<input class="form-check-input simp-btn" type="checkbox" role="switch" onchange="toggle_simplified_view(this);">
+			<label class="form-check-label" style="text-wrap: nowrap;">Simplified view:</label>
+		</div>
+	</div>
+	<div class="grid card-grid-fancy">
+		<a class="main-cards" href="https://campuswire.com/p/GF62988DA">
+			<img src="/public/campuswire.ico" alt="Campuswire logo" style="background-color: #fff;">
+			<p class="fw-bold text-center m-0">Campuswire</p>
+			<p class="text-center m-0">Course forum</p>
+		</a>
+		<a class="main-cards" href="https://uofi.box.com/s/g7kf5pmo01pf7yuqfq07wfqppuzcqh76">
+			<img src="/public/box.png" alt="Box Logo" style=" border-radius: .5rem;">
+			<p class="fw-bold text-center m-0">Box</p>
+			<p class="text-center m-0">Lecture notes</p>
+		</a>
+		<a class="main-cards" href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182">
+			<img src="/public/blocki2.png" alt="Illinois Mediaspace Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;">
+			<p class="fw-bold text-center m-0">Illinois Mediaspace</p>
+			<p class="text-center m-0">Lecture recordings</p>
+		</a>
+	</div>
+
+    <ul class="mt-0 card-grid-simple">
         <li><a href="https://campuswire.com/p/GF62988DA">Discussion forum on Campuswire&nbsp;</a>(group code: 8823)</li>
         <li><a href="https://uofi.box.com/s/g7kf5pmo01pf7yuqfq07wfqppuzcqh76"><u>Lecture Notes</u></a></li>
         <li><u><a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182"><u>Lecture Recordings&#8203;</u></a>&#8203;</u></li>
     </ul>
 
-	<div class="d-flex flex-column flex-lg-row flex-fill">
+	<div class="d-flex flex-column flex-lg-row flex-fill mt-3">
 		<p class="flex-grow pe-0 pe-lg-2">Access the course reference pages, a free and interactive short-form textbook designed at Illinois, at this link:</p>
 		<a href="https://mechref.org/sol" class="text-black text-decoration-none" id="ref-pages-ad">
 			<div class="d-flex align-items-center flex-column" style="border: 2px solid var(--bs-border-color); border-radius: 10px;">
@@ -126,9 +171,10 @@ import DisplayTable from '../components/DisplayTable.astro';
 	</div>
 	
     
-    <p>Please fill out Excused Absence Requests for TAM 251 <a href="https://forms.office.com/r/e8whXc37An">here</a>.</p>
+    <p class="mt-3">Please fill out the <a href="https://forms.office.com/r/e8whXc37An" class="themed-text fw-bold"> Excused Absence Requests for TAM 251 HERE</a>.</p>
 
-    <h2 class="h4 fw-bold mt-4" id="calendar">TAM 251 Course Organization:</h2>
+	</SubSection>
+	<SubSection id="calendar" title="TAM 251 Course Organization">
 
     <p><em>This is a living document providing the general structure of the course: All assessments subject to change.</em></p>
 
@@ -298,4 +344,6 @@ import DisplayTable from '../components/DisplayTable.astro';
 		</tr>
 	</tbody>
 </DisplayTable>
+</SubSection>
 </Layout>
+

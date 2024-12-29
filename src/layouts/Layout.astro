@@ -29,15 +29,13 @@ const { title } = Astro.props;
 		<link rel="stylesheet" href="/static/css/tables.css">
 
 		<script src="/static/js/themes.js" is:inline></script>
-		<link rel="stylesheet" href="/static/css/themes.css">
+		<script src="/public/static/js/simplified_view.js" is:inline></script>
 		
 		<link rel="stylesheet" href="/static/css/main.css">
 		<link rel="stylesheet" href="/static/css/sidebar.css">
 	</head>
 	<body class="w-100">
-		<!-- BELOW IS THE NAVBAR -->
 		<Navbar />
-		<!-- THE NAVBAR ENDS HERE -->
 		<div class="d-flex justify-content-center w-100">
 			<div class="max-width1160 mb-5 mt-3">
 				<slot />
@@ -92,19 +90,6 @@ const { title } = Astro.props;
 		font-size: 1.15rem;
 	}
 
-	.nosideborderleft{
-        border-left: 0px solid var(--bs-border-color) !important;
-    }
-
-    .nosideborderright{
-        border-right: 0px solid var(--bs-border-color);
-    }
-
-	.callout-grid{
-		display: grid;
-		grid-template-columns: 1fr;
-	}
-
 	.content{
 		display: grid;
 		grid-template-columns: 1fr;
@@ -122,18 +107,6 @@ const { title } = Astro.props;
 	.subsubsubsection{
         color:var(--text-tertiary);
     }
-
-	@media (min-width: 1200px){
-		.content{
-			grid-template-columns: 1fr 5fr;
-		}
-	}
-
-	@media (min-width: 992px){
-		.callout-grid{
-			grid-template-columns: 20fr 7fr;
-		}
-	}
 
 	.max-width1160{
 		width: 1140px;
