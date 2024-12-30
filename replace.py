@@ -8,9 +8,9 @@ for page in pages:
     with open(url, 'r') as f:
         data = f.read()
 
-    data = data.replace('src="/', 'src="/tam251/')
+    data = data.replace('src="/', 'src="/tam210/')
 
-    data = data.replace('href="/', 'href="/tam251/')
+    data = data.replace('href="/', 'href="/tam210/')
 
     with open(url, 'w') as f:
         f.write(data)
