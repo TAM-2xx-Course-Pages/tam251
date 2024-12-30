@@ -1,6 +1,6 @@
 import os
 
-pages = ["layouts/Layout.astro", "components/Navbar.astro"] + os.listdir('./pages')
+pages = ["layouts/Layout.astro", "components/Navbar.astro"] + ['./pages/' + a for a in os.listdir('./src/pages')]
 
 for page in pages:
     url = os.path.join(os.getcwd(), "src", page)
