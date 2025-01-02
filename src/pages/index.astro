@@ -23,12 +23,7 @@ import DisplayTable from '../components/DisplayTable.astro';
 		transition: all linear .2s;
 	}
 
-	@media(width >= 768px){
-		ul a:hover{
-			transform: scale(1.05);
-			font-size: 1.17rem;
-		}
-	}
+	
 
 	@media(width >= 992px){
 		#ref-pages-ad:hover{
@@ -43,7 +38,10 @@ import DisplayTable from '../components/DisplayTable.astro';
 		grid-template-columns: repeat(auto-fit, 230px);
 		grid-auto-rows: 1fr;
 		gap: 1rem;
+		justify-content: center;
 	}
+
+	
 
 	.main-cards{
 		padding: .5rem;
@@ -67,6 +65,32 @@ import DisplayTable from '../components/DisplayTable.astro';
 		object-fit: contain;
 		width: 100%;
 	}
+
+	.simp-switch{
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+		margin-left: 2rem;
+	}
+
+	.simp-btn{
+		margin-right: .5rem;
+	}
+
+	@media(width >= 768px){
+		ul a:hover{
+			transform: scale(1.05);
+			font-size: 1.17rem;
+		}
+
+		div.grid{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, 230px);
+			grid-auto-rows: 1fr;
+			gap: 1rem;
+			justify-content: start;
+		}
+	}
 </style>
 
 <Layout title="TAM 251 - Fall 24">
@@ -75,10 +99,9 @@ import DisplayTable from '../components/DisplayTable.astro';
     
 	<SubSection id="assignments" title="Graded assignments">
 	
-	<div class="d-flex justify-content-between">
+	<div class="d-flex justify-content-between flex-column flex-md-row">
 		<p class="mb-0">This course uses the following resources as part of your grade:</p>
-		<div class="form-check form-switch">
-			
+		<div class="form-check form-switch simp-switch">
 			<input class="form-check-input simp-btn" type="checkbox" role="switch" onchange="toggle_simplified_view(this);">
 			<label class="form-check-label" style="text-wrap: nowrap;">Simplified view:</label>
 		</div>
@@ -122,9 +145,9 @@ import DisplayTable from '../components/DisplayTable.astro';
 	</SubSection>
 	<SubSection id="resources" title="Course material & helpful resources">
 
-	<div class="d-flex justify-content-between mt-3">
+	<div class="d-flex flex-column flex-md-row justify-content-between mt-3">
 		<p class="mb-0">The following links provide access to resources meant to help you succeed in the course, as well as the material covered in class.</p>
-		<div class="form-check form-switch">
+		<div class="form-check form-switch simp-switch">
 				
 			<input class="form-check-input simp-btn" type="checkbox" role="switch" onchange="toggle_simplified_view(this);">
 			<label class="form-check-label" style="text-wrap: nowrap;">Simplified view:</label>
