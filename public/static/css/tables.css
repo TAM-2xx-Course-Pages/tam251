@@ -18,3 +18,7 @@ thead > tr > th{
 tbody > tr > td{
     text-align: center;
 }
+
+td[rowspan]:not(:empty){
+    border: 2px solid var(--bs-border-color);
+}

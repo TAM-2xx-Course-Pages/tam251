@@ -10,6 +10,10 @@ import DisplayTable from '../components/DisplayTable.astro';
 ---
 
 <style>
+	:root{
+		--card-size: 180px;
+	}
+
     ul a{
         color: var(--bs-text-color);
 		transition: font-size linear .2s;
@@ -38,7 +42,7 @@ import DisplayTable from '../components/DisplayTable.astro';
 
 	div.grid{
 		display: grid;
-		grid-template-columns: repeat(auto-fit, 230px);
+		grid-template-columns: repeat(auto-fit, var(--card-size));
 		grid-auto-rows: 1fr;
 		gap: 1rem;
 		justify-content: center;
@@ -70,7 +74,7 @@ import DisplayTable from '../components/DisplayTable.astro';
 	}
 
 	.main-cards img{
-		height: calc(230px - 1rem);
+		height: calc(var(--card-size) - 1rem);
 		display: block;
 		object-fit: contain;
 		width: 100%;
@@ -95,7 +99,7 @@ import DisplayTable from '../components/DisplayTable.astro';
 
 		div.grid{
 			display: grid;
-			grid-template-columns: repeat(auto-fit, 230px);
+			grid-template-columns: repeat(auto-fit, var(--card-size));
 			grid-auto-rows: 1fr;
 			gap: 1rem;
 			justify-content: start;
@@ -138,17 +142,9 @@ import DisplayTable from '../components/DisplayTable.astro';
 				<img src="/prairietest.ico" alt="PrairieTest Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;" />
 				<p class="fw-bold text-center m-0">PrairieTest</p>
 				<p class="text-center m-0">Register for quizzes</p>
-				<p class="text-center m-0"><a href="https://courses.grainger.illinois.edu/tam210/sp2025/pltips.html" style="text-decoration:underline !important; ">PrairieLearn/CBTF Tips</a></p>
+				<p class="text-center m-0"><a href="https://courses.grainger.illinois.edu/tam210/sp2025/pltips.html" style="text-decoration:underline !important; ">PL/CBTF Tips</a></p>
 			</a>
-		</div>
-		<div class="main-cards">
-			<a href="https://canvas.illinois.edu/courses/50000/gradebook">
-				<img src="/blocki2.png" alt="Illinois Canvas Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;" />
-				<p class="fw-bold text-center m-0">Canvas</p>
-				<p class="text-center m-0">Course gradebook</p>
-			</a>
-		</div>
-		
+		</div>	
 	</div>
 
 	<ul class="mt-0 card-grid-simple">
@@ -158,8 +154,7 @@ import DisplayTable from '../components/DisplayTable.astro';
         <ul>
             <li><a href="https://www.prairietest.org">&#8203;</a><a href="https://courses.grainger.illinois.edu/tam210/sp2025/pltips.html">PrairieLearn/CBTF Tips</a></li>
         </ul>
-		<li><a href="https://canvas.illinois.edu/courses/50000/gradebook">Access the gradebook on the course Canvas page</a></li>
-        </li>
+		</li>
     </ul>
 
 	</SubSection>
@@ -175,8 +170,15 @@ import DisplayTable from '../components/DisplayTable.astro';
 	</div>
 	<div class="grid card-grid-fancy">
 		<div class="main-cards">
+			<a href="https://canvas.illinois.edu/courses/50000/gradebook">
+				<img src="/blocki2.png" alt="Illinois Canvas Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;" />
+				<p class="fw-bold text-center m-0">Canvas</p>
+				<p class="text-center m-0">Course gradebook</p>
+			</a>
+		</div>
+		<div class="main-cards">
 			<a href="https://campuswire.com/p/GF62988DA">
-				<img src="/campuswire.ico" alt="Campuswire logo" style="background-color: #fff;"/>
+				<img src="/campuswire.ico" alt="Campuswire logo" style="background-color: #fff; border-radius: .5rem;"/>
 				<p class="fw-bold text-center m-0">Campuswire</p>
 				<p class="text-center m-0">Course forum</p>
 			</a>
@@ -191,34 +193,26 @@ import DisplayTable from '../components/DisplayTable.astro';
 		<div class="main-cards">
 			<a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182">
 				<img src="/blocki2.png" alt="Illinois Mediaspace Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;"/>
-				<p class="fw-bold text-center m-0">Illinois Mediaspace</p>
+				<p class="fw-bold text-center m-0">Mediaspace</p>
 				<p class="text-center m-0">Lecture recordings</p>
+			</a>
+		</div>
+		<div class="main-cards">
+			<a href="https://mechref.org/sol">
+				<img src="/image.png" alt="Mechref illustration" style="background-color: #fff; padding: .5rem; border-radius: .5rem;"/>
+				<p class="fw-bold text-center m-0">Mechref</p>
+				<p class="text-center m-0">Reference pages</p>
 			</a>
 		</div>
 	</div>
 
     <ul class="mt-0 card-grid-simple">
+		<li><a href="https://canvas.illinois.edu/courses/50000/gradebook">Access the gradebook on the course Canvas page</a></li>
         <li><a href="https://campuswire.com/p/GF62988DA">Discussion forum on Campuswire&nbsp;</a>(group code: 8823)</li>
         <li><a href="https://uofi.box.com/s/g7kf5pmo01pf7yuqfq07wfqppuzcqh76"><u>Lecture Notes</u></a></li>
-        <li><u><a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182"><u>Lecture Recordings&#8203;</u></a>&#8203;</u></li>
+        <li><a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182"><u>Lecture Recordings&#8203;</u></a></li>
+		<li><u><a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182">Access the course reference pages, a free and interactive short-form textbook designed at Illinois</a></u></li>
     </ul>
-
-	<div class="d-flex flex-column flex-lg-row flex-fill mt-3">
-		<p class="pe-0 pe-lg-2">Access the course reference pages, a free and interactive short-form textbook designed at Illinois, at this link:</p>
-		<div class="d-flex align-items-center flex-column" style="border: 2px solid var(--bs-border-color); border-radius: 10px; overflow: hidden;">
-			<a href="https://mechref.org/sol" class="text-decoration-none" id="ref-pages-ad">
-			
-				<div class="d-flex flex-row">
-					<img src="/image.png" class="d-block" alt="Reference page animation example" style="border: 2px solid white" height="300"/>
-				</div>
-				
-				<p class="fw-bold m-0  text-center text-body">Click here!</p>
-			</a>
-		</div>
-		
-		
-	</div>
-	
     
     <p class="mt-3">Please fill out the <a href="https://forms.office.com/r/e8whXc37An" class="themed-text fw-bold"> Excused Absence Requests for TAM 251 HERE</a>.</p>
 
