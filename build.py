@@ -83,26 +83,41 @@ explore_dir_and_move(home, '')
 
 ## PAGES WITH CONTENT
 links_to_replace = {
-    f"href=\"/_astro/{css[0]}\"": f"href=\"./_astro/{css[0]}\"",
-    "href=\"/favicon2.png\"":"href=\"./favicon2.png\"",
-    "href=\"/bootstrap.min.css\"": "href=\"./bootstrap.min.css\"",
-    "src=\"/bootstrap.min.js\"": "src=\"./bootstrap.min.js\"",
-    "src=\"/mathjax/tex-chtml.js\"": "src=\"./mathjax/tex-chtml.js\"",
-    "src=\"/jquery-2.1.4.min.js\"": "src=\"./jquery-2.1.4.min.js\"",
-    "src=\"/sha1.js\"": "src=\"./sha1.js\"",
-    "src=\"/static/js/themes.js\"": "src=\"./static/js/themes.js\"",
-    "src=\"/static/js/simplified_view.js\"": "src=\"./static/js/simplified_view.js\"",
-    "href=\"/static/css/main.css\"": "href=\"./static/css/main.css\"",
-    "href=\"/bootstrap-icons.min.css\"": "src=\"./bootstrap-icons.min.css\"",
-    "href=\"/static/css/lightTheme.css\"": "href=\"./static/css/lightTheme.css\"",
-    "href=\"/static/css/darkTheme.css\"": "href=\"./static/css/darkTheme.css\"",
-    "href=\"/static/css/themes.css\"": "href=\"./static/css/themes.css\"",
-    "href=\"/static/css/sidebar.css\"": "href=\"./static/css/sidebar.css\"",
-    "href=\"/static/css/tables.css\"": "href=\"./static/css/tables.css\"",
-    'src="/image.png"': 'src="./image.png"',
-    'src="/image2.png"': 'src="./image2.png"',
-    'src="/blocki.png"': 'src="./blocki.png"',
+    f"href=\"/_astro/{css[0]}\"": f"href=\"_astro/{css[0]}\"",
+    "href=\"/favicon2.png\"":"href=\"favicon2.png\"",
+    "href=\"/bootstrap.min.css\"": "href=\"bootstrap.min.css\"",
+    "src=\"/bootstrap.min.js\"": "src=\"bootstrap.min.js\"",
+    "src=\"/mathjax/tex-chtml.js\"": "src=\"mathjax/tex-chtml.js\"",
+    "src=\"/jquery-2.1.4.min.js\"": "src=\"jquery-2.1.4.min.js\"",
+    "src=\"/sha1.js\"": "src=\"sha1.js\"",
+    "src=\"/static/js/themes.js\"": "src=\"static/js/themes.js\"",
+    "src=\"/static/js/simplified_view.js\"": "src=\"static/js/simplified_view.js\"",
+    "href=\"/static/css/main.css\"": "href=\"static/css/main.css\"",
+    "href=\"/bootstrap-icons.min.css\"": "src=\"bootstrap-icons.min.css\"",
+    "href=\"/static/css/lightTheme.css\"": "href=\"static/css/lightTheme.css\"",
+    "href=\"/static/css/darkTheme.css\"": "href=\"static/css/darkTheme.css\"",
+    "href=\"/static/css/themes.css\"": "href=\"static/css/themes.css\"",
+    "href=\"/static/css/sidebar.css\"": "href=\"static/css/sidebar.css\"",
+    "href=\"/static/css/tables.css\"": "href=\"static/css/tables.css\"",
 }
+
+srcs = [
+    'blocki.png',
+    'image.png',
+    'image2.png',
+    'iclicker.png',
+    'pl.png',
+    'blocki2.png',
+    'campuswire.ico',
+    'prairietest.ico',
+    'box.png',
+    'icons/moon.png',
+    'icons/sun.png',
+    'icons/list.png'
+]
+
+for s in srcs:
+    links_to_replace[f'src="/{s}"'] = f'src="{s}"'
 
 pages = [p for p in os.listdir('./dist') if p[-4:] == 'html']
 
@@ -136,6 +151,9 @@ for page in pages:
         file.write(data)
 
 special_rewrites = {
+    "theme_icon.src = (\"/icons/moon.png\");":"theme_icon.src = (\"icons/moon.png\");",
+    "theme_icon.src = (\"/icons/sun.png\");":"theme_icon.src = (\"icons/sun.png\");",
+    "><p class=\"fw-bold text-center m-0\">": " /><p class=\"fw-bold text-center m-0\">"
 }
 
 for page in pages:

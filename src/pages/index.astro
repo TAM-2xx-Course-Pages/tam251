@@ -54,6 +54,13 @@ import DisplayTable from '../components/DisplayTable.astro';
 		transition: all linear .1s;
 	}
 
+	.main-cards a{
+		color: black;
+		text-decoration: none;
+	}
+
+
+
 	.main-cards:hover{
 		transform: scale(1.05);
 		margin-bottom: .5rem;
@@ -109,26 +116,35 @@ import DisplayTable from '../components/DisplayTable.astro';
 
 	
 	<div class="grid card-grid-fancy">
-		<a class="main-cards" href="https://join.iclicker.com/KSBG">
-			<img src="/iclicker.png" alt="iClicker Logo" >
-			<p class="fw-bold text-center m-0">iClicker</p>
-			<p class="text-center m-0">For attendance and class participation</p>
-		</a>
-		<a class="main-cards" href="https://us.prairielearn.com">
-			<img src="/pl.png" alt="PrairieLearn Logo" style="background-color: #052c65; padding: .5rem; border-radius: .5rem;">
-			<p class="fw-bold text-center m-0">PrairieLearn</p>
-			<p class="text-center m-0">Homeworks and labs</p>
-		</a>
-		<a class="main-cards" href="https://us.prairietest.com">
-			<img src="/prairietest.ico" alt="PrairieTest Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;">
-			<p class="fw-bold text-center m-0">PrairieTest</p>
-			<p class="text-center m-0">Register for quizzes</p>
-		</a>
-		<a class="main-cards" href="https://canvas.illinois.edu/courses/50000/gradebook">
-			<img src="/blocki2.png" alt="Illinois Canvas Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;">
-			<p class="fw-bold text-center m-0">Canvas</p>
-			<p class="text-center m-0">Course gradebook</p>
-		</a>
+		<div class="main-cards">
+			<a href="https://join.iclicker.com/KSBG">
+				<img src="/iclicker.png" alt="iClicker Logo" />
+				<p class="fw-bold text-center m-0">iClicker</p>
+				<p class="text-center m-0">For attendance and class participation</p>
+			</a>
+		</div>
+		<div class="main-cards">
+			<a href="https://us.prairielearn.com">
+				<img src="/pl.png" alt="PrairieLearn Logo" style="background-color: #052c65; padding: .5rem; border-radius: .5rem;" />
+				<p class="fw-bold text-center m-0">PrairieLearn</p>
+				<p class="text-center m-0">Homeworks and labs</p>
+			</a>
+		</div>
+		<div class="main-cards">
+			<a href="https://us.prairietest.com">
+				<img src="/prairietest.ico" alt="PrairieTest Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;" />
+				<p class="fw-bold text-center m-0">PrairieTest</p>
+				<p class="text-center m-0">Register for quizzes</p>
+			</a>
+		</div>
+		<div class="main-cards">
+			<a href="https://canvas.illinois.edu/courses/50000/gradebook">
+				<img src="/blocki2.png" alt="Illinois Canvas Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;" />
+				<p class="fw-bold text-center m-0">Canvas</p>
+				<p class="text-center m-0">Course gradebook</p>
+			</a>
+		</div>
+		
 	</div>
 
 	<ul class="mt-0 card-grid-simple">
@@ -154,21 +170,27 @@ import DisplayTable from '../components/DisplayTable.astro';
 		</div>
 	</div>
 	<div class="grid card-grid-fancy">
-		<a class="main-cards" href="https://campuswire.com/p/GF62988DA">
-			<img src="/campuswire.ico" alt="Campuswire logo" style="background-color: #fff;">
-			<p class="fw-bold text-center m-0">Campuswire</p>
-			<p class="text-center m-0">Course forum</p>
-		</a>
-		<a class="main-cards" href="https://uofi.box.com/s/g7kf5pmo01pf7yuqfq07wfqppuzcqh76">
-			<img src="/box.png" alt="Box Logo" style=" border-radius: .5rem;">
-			<p class="fw-bold text-center m-0">Box</p>
-			<p class="text-center m-0">Lecture notes</p>
-		</a>
-		<a class="main-cards" href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182">
-			<img src="/blocki2.png" alt="Illinois Mediaspace Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;">
-			<p class="fw-bold text-center m-0">Illinois Mediaspace</p>
-			<p class="text-center m-0">Lecture recordings</p>
-		</a>
+		<div class="main-cards">
+			<a href="https://campuswire.com/p/GF62988DA">
+				<img src="/campuswire.ico" alt="Campuswire logo" style="background-color: #fff;"/>
+				<p class="fw-bold text-center m-0">Campuswire</p>
+				<p class="text-center m-0">Course forum</p>
+			</a>
+		</div>
+		<div class="main-cards">
+			<a href="https://uofi.box.com/s/g7kf5pmo01pf7yuqfq07wfqppuzcqh76">
+				<img src="/box.png" alt="Box Logo" style=" border-radius: .5rem;"/>
+				<p class="fw-bold text-center m-0">Box</p>
+				<p class="text-center m-0">Lecture notes</p>
+			</a>
+		</div>
+		<div class="main-cards">
+			<a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182">
+				<img src="/blocki2.png" alt="Illinois Mediaspace Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;"/>
+				<p class="fw-bold text-center m-0">Illinois Mediaspace</p>
+				<p class="text-center m-0">Lecture recordings</p>
+			</a>
+		</div>
 	</div>
 
     <ul class="mt-0 card-grid-simple">
@@ -178,17 +200,17 @@ import DisplayTable from '../components/DisplayTable.astro';
     </ul>
 
 	<div class="d-flex flex-column flex-lg-row flex-fill mt-3">
-		<p class="flex-grow pe-0 pe-lg-2">Access the course reference pages, a free and interactive short-form textbook designed at Illinois, at this link:</p>
-		<a href="https://mechref.org/sol" class="text-black text-decoration-none" id="ref-pages-ad">
-			<div class="d-flex align-items-center flex-column" style="border: 2px solid var(--bs-border-color); border-radius: 10px; overflow: hidden;">
+		<p class="pe-0 pe-lg-2">Access the course reference pages, a free and interactive short-form textbook designed at Illinois, at this link:</p>
+		<div class="d-flex align-items-center flex-column" style="border: 2px solid var(--bs-border-color); border-radius: 10px; overflow: hidden;">
+			<a href="https://mechref.org/sol" class="text-decoration-none" id="ref-pages-ad">
+			
 				<div class="d-flex flex-row">
-					<img src="/image.png" class="d-block" alt="Reference page animation example" style="border: 2px solid white" height="300">
-					<img src="/image2.png" class="d-none d-md-block" alt="Reference page animation example" style="border: 2px solid white; " height="300">
+					<img src="/image.png" class="d-block" alt="Reference page animation example" style="border: 2px solid white" height="300"/>
 				</div>
 				
-				<p class="fw-bold m-0 text-body">Click here!</p>
-			</div>
-		</a>
+				<p class="fw-bold m-0 text-body text-center">Click here!</p>
+			</a>
+		</div>
 		
 		
 	</div>

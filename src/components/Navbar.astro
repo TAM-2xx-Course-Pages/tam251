@@ -262,7 +262,7 @@
                     <button class="navbar-toggler d-flex flex-row align-items-center" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target="#mainnav">
                         
                         
-                        
+                        <img src="/icons/list.png" style="height:2rem; filter: invert(100%); " >
                         <span class="label d-none d-sm-block source-pro" style="font-size: 1.25rem; font-weight: 700;">Menu</span>
                     </button>
                 </div>
@@ -360,16 +360,16 @@
             </li>
         </ul>
         <span class="navbar-text p-0 d-flex flex-row justify-content-center align-items-center theme-toggler" onclick="toggle_theme();" >
-            <i class="bi ps-1 pe-2 m-0" id="theme-icon"></i>
+            <img src="" class="bi ps-1 pe-2 m-0" id="theme-icon" style="height: 1rem;"></i>
             <p class="nav-link active py-1 pe-1 m-0 fw-bold prevent-select" style="text-wrap: nowrap;">Toggle theme</p>
          
             <script is:inline>
                 const theme_icon = document.querySelector("#theme-icon");
                 //bi-moon
                 if (theme == "dark"){
-                    theme_icon.classList.add("bi-moon-stars-fill");
+                    theme_icon.src = ("/icons/moon.png");
                 }else{
-                    theme_icon.classList.add("bi-sun-fill");
+                    theme_icon.src = ("/icons/sun.png");
                 }
             </script>
         </span>
