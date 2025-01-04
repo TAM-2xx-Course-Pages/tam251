@@ -23,7 +23,10 @@ import DisplayTable from '../components/DisplayTable.astro';
 		transition: all linear .2s;
 	}
 
-	
+	#ref-pages-ad a{
+		color: var(--bs-body-color);
+		text-decoration: none;
+	}
 
 	@media(width >= 992px){
 		#ref-pages-ad:hover{
@@ -101,7 +104,7 @@ import DisplayTable from '../components/DisplayTable.astro';
 </style>
 
 <Layout title="TAM 251 - Spring 25">
-    <p>Welcome! This is the official course website for TAM 251 at UIUC in Fall 2024.</p>
+    <p>Welcome! This is the official course website for TAM 251 at UIUC in Spring 25.</p>
 
     
 	<SubSection id="assignments" title="Graded assignments">
@@ -135,6 +138,7 @@ import DisplayTable from '../components/DisplayTable.astro';
 				<img src="/prairietest.ico" alt="PrairieTest Logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;" />
 				<p class="fw-bold text-center m-0">PrairieTest</p>
 				<p class="text-center m-0">Register for quizzes</p>
+				<p class="text-center m-0"><a href="https://courses.grainger.illinois.edu/tam210/sp2025/pltips.html" style="text-decoration:underline !important; ">PrairieLearn/CBTF Tips</a></p>
 			</a>
 		</div>
 		<div class="main-cards">
@@ -152,7 +156,7 @@ import DisplayTable from '../components/DisplayTable.astro';
         <li><a href="https://us.prairielearn.com">Homework problems on PrairieLearn </a></li>
         <li><a href="https://us.prairietest.com/">Register for quizzes at&nbsp;CBTF (Computer-Based Testing Facility) via PrairieTest</a>
         <ul>
-            <li><a href="https://www.prairietest.org">&#8203;</a><a href="http://mechref.engr.illinois.edu/pol/pltips.html">PrairieLearn/CBTF Tips</a></li>
+            <li><a href="https://www.prairietest.org">&#8203;</a><a href="https://courses.grainger.illinois.edu/tam210/sp2025/pltips.html">PrairieLearn/CBTF Tips</a></li>
         </ul>
 		<li><a href="https://canvas.illinois.edu/courses/50000/gradebook">Access the gradebook on the course Canvas page</a></li>
         </li>
@@ -208,7 +212,7 @@ import DisplayTable from '../components/DisplayTable.astro';
 					<img src="/image.png" class="d-block" alt="Reference page animation example" style="border: 2px solid white" height="300"/>
 				</div>
 				
-				<p class="fw-bold m-0 text-body text-center">Click here!</p>
+				<p class="fw-bold m-0  text-center text-body">Click here!</p>
 			</a>
 		</div>
 		
@@ -223,7 +227,7 @@ import DisplayTable from '../components/DisplayTable.astro';
 
     <p><em>This is a living document providing the general structure of the course: All assessments subject to change.</em></p>
 
-<p>Due dates and testing periods for assessments and evaluations can be found on the <a href="sched.html">schedule page</a></p>
+<p>Due dates and testing periods for assessments and evaluations can be found on the <a href="schedule.html">schedule page</a></p>
 
 <DisplayTable class_="table table-striped" id="info-to">
 	<thead>
