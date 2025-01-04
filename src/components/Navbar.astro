@@ -207,6 +207,12 @@
         z-index: 1000;
     }
 
+    @media (width <= 992px){
+        nav{
+            position: relative;
+        }
+    }
+
     .menu{
         color: var(--illini-blue);
         font-weight: bold;
@@ -223,6 +229,18 @@
         -webkit-user-select: none; 
         -ms-user-select: none;
         user-select: none;
+    }
+
+    .syllabus-menu{
+        columns:2;
+    }
+
+    
+
+    @media (width <= 768px){
+        .course-menu{
+            column-count: 1 !important;
+        }
     }
 </style>
 
@@ -300,7 +318,7 @@
                 <div class="dropdown-menu tile-list px-2" id="mainnav-info">
                     <section class="tile menu white-box col">
                     <h2><a href="/syllabus" aria-label="Syllabus">Syllabus</a></h2>
-                        <ul style="column-fill: balance;column-count:2;" class="course-menu">
+                        <ul style="column-fill: balance;" class="course-menu syllabus-menu">
                             <li>
                                 General Info:
                                 <ul>
