@@ -44,7 +44,7 @@ import DisplayTable from '../components/DisplayTable.astro';
 		display: grid;
 		grid-template-columns: repeat(auto-fit, var(--card-size));
 		grid-auto-rows: 1fr;
-		gap: 1rem;
+		gap: 10px;
 		justify-content: center;
 	}
 
@@ -98,10 +98,6 @@ import DisplayTable from '../components/DisplayTable.astro';
 		}
 
 		div.grid{
-			display: grid;
-			grid-template-columns: repeat(auto-fit, var(--card-size));
-			grid-auto-rows: 1fr;
-			gap: 1rem;
 			justify-content: start;
 		}
 	}
@@ -204,6 +200,12 @@ import DisplayTable from '../components/DisplayTable.astro';
 				<p class="text-center m-0">Reference pages</p>
 			</a>
 		</div>
+		<div class="main-cards">
+			<a href="https://forms.office.com/r/e8whXc37An">
+				<img src="/forms.png" alt="Google forms logo" style="background-color: #fff; padding: .5rem; border-radius: .5rem;"/>
+				<p class="fw-bold text-center m-0">Excused absence form</p>
+			</a>
+		</div>
 	</div>
 
     <ul class="mt-0 card-grid-simple">
@@ -212,9 +214,8 @@ import DisplayTable from '../components/DisplayTable.astro';
         <li><a href="https://uofi.box.com/s/g7kf5pmo01pf7yuqfq07wfqppuzcqh76"><u>Lecture Notes</u></a></li>
         <li><a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182"><u>Lecture Recordings&#8203;</u></a></li>
 		<li><u><a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182">Access the course reference pages, a free and interactive short-form textbook designed at Illinois</a></u></li>
+		<li><u><a href="https://forms.office.com/r/e8whXc37An">Please fill out the Excused Absence Requests for TAM 251 here</a></u></li>
     </ul>
-    
-    <p class="mt-3">Please fill out the <a href="https://forms.office.com/r/e8whXc37An" class="themed-text fw-bold"> Excused Absence Requests for TAM 251 HERE</a>.</p>
 
 	</SubSection>
 	<SubSection id="calendar" title="TAM 251 Course Organization">
