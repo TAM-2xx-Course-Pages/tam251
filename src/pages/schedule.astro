@@ -9,22 +9,6 @@ import Layout from '../layouts/Layout.astro';
 import DisplayTable from '../components/DisplayTable.astro';
 ---
 
-<style>
-	tr.oddWeek > td{
-		background-color: var(--bs-table-striped-bg);
-	}
-
-	td{
-		display: table-cell;
-		vertical-align: middle;
-		unicode-bidi: isolate;
-		border: 1px solid var(--bs-border-color);
-	}
-
-	p{
-		display: block;
-	}
-</style>
 
 <Layout title="TAM 251 - Spring 25">
     <ul style="text-align: left">
@@ -39,945 +23,596 @@ import DisplayTable from '../components/DisplayTable.astro';
 				<th>Day</th>
 				<th>Date</th>
 				<th>Lecture</th>
-				<th>Discussion</th>
-				<th>Assignment Due Dates</th>
 				<th>Quiz</th>
+				<th>Assignment Due Dates</th>
+				<th>Discussion</th>
 			</tr>
 		</thead>
-		<tbody>
-			
-			<!-- ###################################################################### -->
-			<tr class="oddWeek">
-				<td rowspan="7">1</td>
-				<td>M</td>
-				<td>Aug 26</td>
-				<td>Lecture 00</td>
-				<td rowspan="5">
-				<span>
-					<p><a href="https://uofi.box.com/s/fuzgb07pafusff65hy20crph1q522zze">WS #1: Introduction and Review of Statics</a></p>
-	
-					<p><a href="https://uofi.box.com/s/5b96t6vi0k682wulnrh3f332nd9qucrf"><u>Solution</u></a></p>
-				</span>
-				
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>T</td>
-				<td>Aug27</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>W</td>
-				<td>Aug28</td>
-				<td>Lecture 01</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>R</td>
-				<td>Aug29</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>F</td>
-				<td>Aug 30</td>
-				<td>Lecture 02</td>
-				<td>HW0: Statics review</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>S</td>
-				<td>Aug 31</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>U</td>
-				<td>Sep 01</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="evenWeek">
-				<td rowspan="7">2</td>
-				<td>M</td>
-				<td>Sep 02</td>
-				<td>Labor Day (No Lecture)</td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/xqzxcera7wud1eam0pn7h3sep6k11c9j">WS #2: Elbow Joint</a></p>
-	
-				<p><a href="https://uofi.box.com/s/16orc2mdizuja9flr7dmeesq3nh9ht4s"><u>Solution</u></a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>T</td>
-				<td>Sep 03</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>W</td>
-				<td>Sep 04</td>
-				<td>Lecture 03</td>
-				<td>HW1: Stress</td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>R</td>
-				<td>Sep 05</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>F</td>
-				<td>Sep 06</td>
-				<td>Lecture 04</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>S</td>
-				<td>Sep 07</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>U</td>
-				<td>Sep 08</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="oddWeek">
-				<td rowspan="7">3</td>
-				<td>M</td>
-				<td>Sep 09</td>
-				<td>Lecture 05</td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/i0jlmzclvzm9divgdshtvzis3v4sgc6y">WS #3: Tailgate</a></p>
-	
-				<p><a href="https://uofi.box.com/s/jfo8da1oxc289ztc34laeuhfoihqlpyd"><u>Solution</u></a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>T</td>
-				<td>Sep 10</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>W</td>
-				<td>Sep 11</td>
-				<td>Lecture 06</td>
-				<td>HW2: Strain</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>R</td>
-				<td>Sep 12</td>
-				<td></td>
-				<td></td>
-				<td colspan="1" rowspan="3">
-				<p>Quiz 1</p>
-				</td>
-			</tr>
-			<tr class="oddWeek">
-				<td>F</td>
-				<td>Sep 13</td>
-				<td>No Lecture</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>S</td>
-				<td>Sep 14</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>U</td>
-				<td>Sep 15</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="evenWeek">
-				<td rowspan="7">4</td>
-				<td>M</td>
-				<td>Sep 16</td>
-				<td>Lecture 07</td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/vgld9zm3rfbpp5vlipseqamltzbv7a1l">WS #4: Bridge</a></p>
-	
-				<p><a href="https://uofi.box.com/s/yqyljbl1fzk7az55xzjn03h9ba3abxny"><u>Solution</u></a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>T</td>
-				<td>Sep 17</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>W</td>
-				<td>Sep 18</td>
-				<td>Lecture 08</td>
-				<td>HW3:Material properties + Axial loading - part 1</td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>R</td>
-				<td>Sep 19</td>
-				<td></td>
-				<td></td>
-				<td colspan="1" rowspan="3">
-				<p>Quiz 1 Retake</p>
-				</td>
-			</tr>
-			<tr class="evenWeek">
-				<td>F</td>
-				<td>Sep 20</td>
-				<td>Lecture 09</td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>S</td>
-				<td>Sep 21</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td style="white-space: nowrap;"></td>
-			</tr>
-			<tr class="evenWeek">
-				<td style="white-space: nowrap;">U</td>
-				<td>Sep 22</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="oddWeek">
-				<td rowspan="7">5</td>
-				<td>M</td>
-				<td>Sep 23</td>
-				<td>Lecture 10</td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/6o45bq4e5nph3a9gyhqhfgc194w0bw3w">WS #5: Wind Turbine</a></p>
-	
-				<p><a href="https://uofi.box.com/s/e5ltrorzms5u8gvhe7krsy6lxel0c59w"><u>Solution</u></a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>T</td>
-				<td>Sep 24</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>W</td>
-				<td>Sep 25</td>
-				<td>Lecture 11</td>
-				<td>HW4:<span style="white-space:pre"> </span>Axial loading - part 2</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>R</td>
-				<td>Sep 26</td>
-				<td></td>
-				<td></td>
-				<td colspan="1" rowspan="3">Quiz 2</td>
-			</tr>
-			<tr class="oddWeek">
-				<td>F</td>
-				<td>Sep 27</td>
-				<td>No Lecture</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>S</td>
-				<td>Sep 28</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>U</td>
-				<td>Sep 29</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="evenWeek">
-				<td rowspan="7">6</td>
-				<td>M</td>
-				<td>Sep 30</td>
-				<td>
-				<p>Lecture 12</p>
-				</td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/watbkyu1h6ahth5l4rz4c7knvbbvo2d3">WS #6: Torsion Bar</a></p>
-	
-				<p><a href="https://uofi.box.com/s/c1nttpaymxefcx9hom7zvjvkg6fb9y6u"><u>Solution</u></a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>T</td>
-				<td>Oct 01</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>W</td>
-				<td>Oct 02</td>
-				<td>Lecture 13</td>
-				<td>HW5:<span style="white-space:pre"> </span>Torsion - Part 1</td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>R</td>
-				<td>Oct 03</td>
-				<td></td>
-				<td></td>
-				<td colspan="1" rowspan="3">
-				<p>Quiz 2 Retake</p>
-				</td>
-			</tr>
-			<tr class="evenWeek">
-				<td>F</td>
-				<td>Oct 04</td>
-				<td>Lecture 14</td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>S</td>
-				<td>Oct 05</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>U</td>
-				<td>Oct 06</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="oddWeek">
-				<td rowspan="7">7</td>
-				<td>M</td>
-				<td>Oct 07</td>
-				<td>Lecture 15</td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/i93kyt3kz76i2wsjynhm9egqugxriznr">WS #7: Internal forces statics review</a></p>
-	
-				<p><a href="https://uofi.box.com/s/axarjwpu5gq1pnek6iikutzkpnp5am30"><u>Solution</u></a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>T</td>
-				<td>Oct 08</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>W</td>
-				<td>Oct 09</td>
-				<td>Lecture 16</td>
-				<td>HW6:<span style="white-space:pre"> </span>Torsion - Part 2</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>R</td>
-				<td>Oct 10</td>
-				<td></td>
-				<td></td>
-				<td colspan="1" rowspan="3">Quiz 3</td>
-			</tr>
-			<tr class="oddWeek">
-				<td>F</td>
-				<td>Oct 11</td>
-				<td>No Lecture</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>S</td>
-				<td>Oct 12</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>U</td>
-				<td>Oct 13</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="evenWeek">
-				<td rowspan="7">8</td>
-				<td>M</td>
-				<td>Oct 14</td>
-				<td>Lecture 17</td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/nted0795ervd7q9z66bzfq9jbumx53ht">WS #8: Bicycle!</a></p>
-	
-				<p><a href="https://uofi.box.com/s/gmq87geaffcmp1uxhr9osgck9u2iwhjm"><u>Solution</u></a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>T</td>
-				<td>Oct 15</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>W</td>
-				<td>Oct 16</td>
-				<td>Lecture 18</td>
-				<td>HW7:<span style="white-space:pre"> </span>Beams in bending</td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>R</td>
-				<td>Oct 17</td>
-				<td></td>
-				<td></td>
-				<td colspan="1" rowspan="3">
-				<p>Quiz 3 Retake</p>
-				</td>
-			</tr>
-			<tr class="evenWeek">
-				<td>F</td>
-				<td>Oct 18</td>
-				<td>
-				<p>Lecture 19</p>
-				</td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>S</td>
-				<td>Oct 19</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>U</td>
-				<td>Oct 20</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="oddWeek">
-				<td rowspan="7">9</td>
-				<td>M</td>
-				<td>Oct 21</td>
-				<td>Lecture 20</td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/ci0ut3jyfpcfnlk7f6gyy8x9snjre2eh">WS #9: Boom Crane</a></p>
-	
-				<p><a href="https://uofi.box.com/s/tqhzzypmp9kpc2x6lkwed1deswmo67gu"><u>Solution</u></a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>T</td>
-				<td>Oct 22</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>W</td>
-				<td>Oct 23</td>
-				<td>
-				<p>Lecture 21</p>
-				</td>
-				<td>HW8:<span style="white-space:pre"> </span>Transverse shear stress</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>R</td>
-				<td>Oct 24</td>
-				<td></td>
-				<td></td>
-				<td colspan="1" rowspan="3">Quiz 4</td>
-			</tr>
-			<tr class="oddWeek">
-				<td>F</td>
-				<td>Oct 25</td>
-				<td>Lecture 22</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>S</td>
-				<td>Oct 26</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>U</td>
-				<td>Oct 27</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="evenWeek">
-				<td rowspan="7">10</td>
-				<td>M</td>
-				<td>Oct 28</td>
-				<td>(No Lecture)</td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/dwtae9zbotqj5tz06k50l2itp1tngwg5">WS #10: Beam Design</a></p>
-	
-				<p><a href="https://uofi.box.com/s/t0g0lchvrzzueo6rzgh1dn4yoqubwjio"><u>Solution</u></a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>T</td>
-				<td>Oct 29</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>W</td>
-				<td>Oct 30</td>
-				<td>Lecture 23</td>
-				<td>HW9:<span style="white-space:pre"> </span>Combined loading</td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>R</td>
-				<td>Oct 31</td>
-				<td></td>
-				<td></td>
-				<td colspan="1" rowspan="3">
-				<p>Quiz 4 Retake</p>
-				</td>
-			</tr>
-			<tr class="evenWeek">
-				<td>F</td>
-				<td>Nov 01</td>
-				<td>Lecture 24</td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>S</td>
-				<td>Nov 02</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>U</td>
-				<td>Nov 03</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="oddWeek">
-				<td rowspan="7">11</td>
-				<td>M</td>
-				<td>Nov 04</td>
-				<td>Lecture 25</td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/3yxrx8zk7q6mj6s3fcudijlxdpo8m7n5">WS #11: Pipe System</a></p>
-	
-				<p><a href="https://uofi.box.com/s/kydonpxi73qjttj8sbzht6jilyr3wxmg"><u>Solution</u></a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>T</td>
-				<td>Nov 05</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>W</td>
-				<td>Nov 06</td>
-				<td>Lecture 26</td>
-				<td>HW10:<span style="white-space:pre"> </span>Stress transformation</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>R</td>
-				<td>Nov 07</td>
-				<td></td>
-				<td></td>
-				<td colspan="1" rowspan="3">Quiz 5</td>
-			</tr>
-			<tr class="oddWeek">
-				<td>F</td>
-				<td>Nov 08</td>
-				<td>No Lecture</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>S</td>
-				<td>Nov 09</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>U</td>
-				<td>Nov 10</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="evenWeek">
-				<td rowspan="7">12</td>
-				<td>M</td>
-				<td>Nov 11</td>
-				<td></td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/zgtwj7eboynxjuksehq1syf4wpbl2her">WS #12: Mohr&#39;s Circle</a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>T</td>
-				<td>Nov 12</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>W</td>
-				<td>Nov 13</td>
-				<td></td>
-				<td>HW11:<span style="white-space:pre"> </span>Failure criteria and deflection in beams - Part 1</td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>R</td>
-				<td>Nov 14</td>
-				<td></td>
-				<td></td>
-				<td colspan="1" rowspan="3">
-				<p>Quiz 5 Retake</p>
-				</td>
-			</tr>
-			<tr class="evenWeek">
-				<td>F</td>
-				<td>Nov 15</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>S</td>
-				<td>Nov 16</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>U</td>
-				<td>Nov 17</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="oddWeek">
-				<td rowspan="7">13</td>
-				<td>M</td>
-				<td>Nov 18</td>
-				<td></td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/5ozkswiv5qvtxtj1whxdpt6ykyxf4i39">WS #13: Tongs</a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>T</td>
-				<td>Nov 19</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>W</td>
-				<td>Nov 20</td>
-				<td></td>
-				<td>HW12:<span style="white-space:pre"> </span>Deflection in beams - Part 2</td>
-				<td colspan="1" rowspan="3">Quiz 6</td>
-			</tr>
-			<tr class="oddWeek">
-				<td>R</td>
-				<td>Nov 21</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>F</td>
-				<td>Nov 22</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>S</td>
-				<td>Nov 23</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>U</td>
-				<td>Nov 24</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="evenWeek">
-				<td rowspan="7">14</td>
-				<td>M</td>
-				<td>Nov 25</td>
-				<td colspan="1" rowspan="5"><strong>Fall Break</strong></td>
-				<td rowspan="5">
-				
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>T</td>
-				<td>Nov 26</td>
-				<td>
-				
-				</td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>W</td>
-				<td>Nov 27</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>R</td>
-				<td>Nov 28</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>F</td>
-				<td>Nov 29</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>S</td>
-				<td>Nov 30</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>U</td>
-				<td>Dec 01</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="oddWeek">
-				<td rowspan="7">15</td>
-				<td>M</td>
-				<td>Dec 02</td>
-				<td></td>
-				<td rowspan="5">
-				<p><a href="https://uofi.box.com/s/6k0sxur7r7no0i34dt2o7u291uahxuc9">WS #14: Guitar</a></p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>T</td>
-				<td>Dec 03</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>W</td>
-				<td>Dec 04</td>
-				<td></td>
-				<td>HW13:<span style="white-space:pre"> </span>Buckling</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>R</td>
-				<td>Dec 05</td>
-				<td></td>
-				<td></td>
-				<td colspan="1" rowspan="3">
-				<p>Quiz 6 Retake</p>
-				</td>
-			</tr>
-			<tr class="oddWeek">
-				<td>F</td>
-				<td>Dec 06</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>S</td>
-				<td>Dec 07</td>
-				<td rowspan="2"></td>
-				<td rowspan="2"></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>U</td>
-				<td>Dec 08</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="evenWeek">
-				<td rowspan="7">16</td>
-				<td>M</td>
-				<td>Dec 09</td>
-				<td></td>
-				<td colspan="1" rowspan="3">
-				
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>T</td>
-				<td>Dec 10</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>W</td>
-				<td>Dec 11</td>
-				<td>
-				<p>Last Day of Office Hours</p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>R</td>
-				<td>Dec 12</td>
-				<td>Reading day</td>
-				<td>
-				<p>Last Day to Dispute Grades</p>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>F</td>
-				<td>Dec 13</td>
-				<td colspan="1" rowspan="8">Final Exam</td>
-				<td></td>
-				<td colspan="1" rowspan="8">
-				
-	
-				<p>FINAL EXAM</p>
-	
-				
-				</td>
-				<td rowspan="8"></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>S</td>
-				<td>Dec 14</td>
-				<td rowspan="2"></td>
-			</tr>
-			<tr class="evenWeek">
-				<td>U</td>
-				<td>Dec 15</td>
-			</tr>
-			<!-- ###################################################################### -->
-			<tr class="oddWeek">
-				<td colspan="1" rowspan="8">17</td>
-				<td>M</td>
-				<td>Dec 16</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>T</td>
-				<td>Dec 17</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>W</td>
-				<td>Dec 18</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>R</td>
-				<td>Dec 19</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>F</td>
-				<td>Dec 20</td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>S</td>
-				<td>Dec 21</td>
-				<td colspan="1" rowspan="2"></td>
-				<td colspan="1" rowspan="2"></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr class="oddWeek">
-				<td>U</td>
-				<td>Dec 22</td>
-				<td></td>
-				<td></td>
-			</tr>
-		</tbody>
+		
+			<tbody>
+				<!-- ###################################################################### -->
+				<tr class="oddWeek">
+					<td>1</td>
+					<td>M</td>
+					<td>Jan 20</td>
+					<td style="width: 200px;">
+					<p><span style="color:rgb(0, 128, 0)"><em><strong>MLK Holiday - no class</strong></em></span></p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet01.pdf" target="_blank">WS #1: Introduction and Review of Statics</a></p>
+		
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet01_Solution.pdf" target="_blank">Solution</a></p>
+					</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>1</td>
+					<td>W</td>
+					<td>Jan 22</td>
+					<td>
+					<p>Intro/statics review</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>1</td>
+					<td>F</td>
+					<td>Jan 24</td>
+					<td>
+					<p>Stress</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>HW #0: Statics review</td>
+				</tr>
+				<!-- ###################################################################### -->
+				<tr class="evenWeek">
+					<td>2</td>
+					<td>M</td>
+					<td>Jan 27</td>
+					<td>
+					<p>Stress</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet02.pdf" target="_blank">WS #2: Elbow Joint</a></p>
+		
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet02_Solution.pdf" target="_blank">Solution</a></p>
+					</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>2</td>
+					<td>W</td>
+					<td>Jan 29</td>
+					<td>
+					<p>Stress/strain</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>2</td>
+					<td>F</td>
+					<td>Jan 31</td>
+					<td>
+					<p>Strain</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>HW #1: Stress</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>3</td>
+					<td>M</td>
+					<td>Feb 3</td>
+					<td>
+					<p>Material properties</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet03.pdf" target="_blank">WS #3: Tailgate</a></p>
+		
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet03_Solution.pdf" target="_blank">Solution</a></p>
+					</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>3</td>
+					<td>W</td>
+					<td>Feb 5</td>
+					<td>
+					<p>Material properties</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>HW #2: Strain</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>3</td>
+					<td>F</td>
+					<td>Feb 2</td>
+					<td>
+					<p><em style="color:rgb(0, 128, 0)"><strong>No lecture: In-class quiz session</strong></em></p>
+					<!--
+						<p><a href="/tam251/fa2020/secure/TAM251_Chapter4_AxialLoad_prelecture_Mercer.pdf">Axial Loading&nbsp;prelecture</a></p>
+						--></td>
+					<td>
+					<p><font color="red"><strong>Quiz 1: Stress/Strain (HW 1 and 2)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong></font></p>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<!-- ###################################################################### -->
+				<tr class="evenWeek">
+					<td>4</td>
+					<td>M</td>
+					<td>Feb 10</td>
+					<td>
+					<p>Axial loading</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet04.pdf" target="_blank">WS #4: Bridge</a></p>
+		
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet04_Solution.pdf" target="_blank">Solution</a></p>
+					</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>4</td>
+					<td>W</td>
+					<td>Feb 7</td>
+					<td>
+					<p>Axial loading</p>
+					</td>
+					<td>&nbsp;</td>
+					<td style="text-align: center;">HW #3: Material properties and axial loading - Part 1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>4</td>
+					<td>F</td>
+					<td>Feb 14</td>
+					<td>
+					<p>Axial loading</p>
+					</td>
+					<td><strong style="color:rgb(255, 0, 0)">Quiz 1 retry&nbsp; &nbsp;&nbsp;</strong></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>5</td>
+					<td>M</td>
+					<td>Feb 12</td>
+					<td>
+					<p>Axial loading</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet05-Python.pdf" target="_blank">WS #5: Wind Turbine</a></p>
+		
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet05-Python_Solution.pdf" target="_blank">Solution</a></p>
+					</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>5</td>
+					<td>W</td>
+					<td>Feb 19</td>
+					<td>
+					<p>Torsion</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>HW #4: Axial loading - Part 2</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>5</td>
+					<td>F</td>
+					<td>Feb 21</td>
+					<td>
+					<p><em style="color:rgb(0, 128, 0)"><strong>No lecture: In-class quiz session</strong></em></p>
+					</td>
+					<td>
+					<p><font color="red"><strong>Quiz 2: Material Properties/Axial Loading (HW 3 and 4)</strong></font></p>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>6</td>
+					<td>M</td>
+					<td>Feb 24</td>
+					<td>
+					<p>Torsion</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet06.pdf" target="_blank">WS #6: Torsion Bar</a></p>
+		
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet06_Solution.pdf" target="_blank">Solution</a></p>
+					</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>6</td>
+					<td>W</td>
+					<td>Feb 26</td>
+					<td>
+					<p>Torsion</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>HW #5: Torsion - Part 1</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>6</td>
+					<td>F</td>
+					<td>Mar 4</td>
+					<td>
+					<p>Shear/moment diagrams<br />
+					&nbsp;</p>
+					</td>
+					<td><strong style="color:rgb(255, 0, 0)">Quiz 2 retry&nbsp; &nbsp;&nbsp;</strong></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>7</td>
+					<td>M</td>
+					<td>
+					<p>Mar 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+					</td>
+					<td>
+					<p>Beams in bending</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet07.pdf" target="_blank">WS #7: Internal forces statics review</a></p>
+		
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet07_Solution.pdf" target="_blank">Solution</a></p>
+		
+					<p>&nbsp;</p>
+					</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>7</td>
+					<td>W</td>
+					<td>Feb 178</td>
+					<td>
+					<p>Beams in bending</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>HW #6: Torsion - Part 2</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>7</td>
+					<td>F</td>
+					<td>Mar 1</td>
+					<td>
+					<p><em style="color:rgb(0, 128, 0)"><strong>No lecture: In-class quiz session</strong></em></p>
+					<!--
+						<p><a href="/tam251/fa2020/secure/Lecture19.pdf">Lecture19</a></p>
+						<p><a href="/tam251/fa2020/secure/tbeam.m">Matlab code for T-beam example</a></p>
+						--></td>
+					<td>
+					<p><strong style="color:rgb(255, 0, 0)">Quiz 3: Torsion&nbsp; (HW 5 and 6)</strong></p>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>8</td>
+					<td>M</td>
+					<td>Mar 9</td>
+					<td>
+					<p>Beams in bending</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet08.pdf" target="_blank">WS #8: Bicycle!</a></p>
+		
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet08_Solution.pdf" target="_blank">Solution</a></p>
+					</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>8</td>
+					<td>W</td>
+					<td>Mar 6</td>
+					<td>
+					<p>Transverse shear</p>
+					</td>
+					<td><strong style="color:rgb(255, 0, 0)">Quiz 3 retry: WED through FRI</strong></td>
+					<td>HW #7: Normal stress in beams</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>8</td>
+					<td>F</td>
+					<td>Mar 13</td>
+					<td>
+					<p>Transverse shear</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>9</td>
+					<td>M</td>
+					<td>Mar 11</td>
+					<td>
+					<p><em><strong><span style="color:#006400">Spring break- no class</span></strong></em></p>
+					<!--
+						<p><a href="/tam251/fa2020/secure/Lecture24-complete-example.pdf">Completed built-up beam example</a></p>
+						<p><a href="/tam251/fa2020/secure/Lecture24-extra-example.pdf">Extra built-up beam example</a></p>
+						--></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p>&nbsp;</p>
+					</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>9</td>
+					<td>W</td>
+					<td>Mar 23</td>
+					<td>
+					<p><em><strong><span style="color:#006400">Spring break - no class</span></strong></em></p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>9</td>
+					<td>F</td>
+					<td>Mar 20</td>
+					<td>
+					<p><em><strong><span style="color:#006400">Spring break - no class</span></strong></em></p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>10</td>
+					<td>M</td>
+					<td>Mar 168</td>
+					<td>
+					<p>Transverse shear</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet09.pdf" target="_blank">WS #9: Boom Crane</a></p>
+		
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet09_Solution.pdf" target="_blank">Solution</a></p>
+					</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>10</td>
+					<td>W</td>
+					<td>Mar 25</td>
+					<td>
+					<p>Pressure Vessels</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>
+					<p>HW #8: Transverse shear</p>
+					</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>10</td>
+					<td>F</td>
+					<td>Mar 27</td>
+					<td>
+					<p><em style="color:rgb(0, 128, 0)"><strong>No lecture: In-class quiz session</strong></em></p>
+					</td>
+					<td><strong style="color:rgb(255, 0, 0)">Quiz 4: Normal stress in beams&nbsp;and transverse Shear (HW 7 and 8)</strong></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>11</td>
+					<td>M</td>
+					<td>Mar 30</td>
+					<td>
+					<p>Combined loading</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet10.pdf" target="_blank">WS #10: Beam Design</a></p>
+		
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet10_Solution.pdf" target="_blank">Solution</a></p>
+					</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>11</td>
+					<td>W</td>
+					<td>Apr 1</td>
+					<td>
+					<p>Combined loading</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>No HW due :)</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>11</td>
+					<td>F</td>
+					<td>Apr 3</td>
+					<td>
+					<p>Stress transformation</p>
+					<!--
+						<p><a href="/tam251/fa2020/secure/TAM251_Chapter10_FailureTheories_prelecture_Mercer.pdf">Failure theories&nbsp;prelecture</a></p>
+						--></td>
+					<td>
+					<p><strong style="color:rgb(255, 0, 0)">Quiz 4 retry&nbsp;</strong></p>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>12</td>
+					<td>M</td>
+					<td>Apr 1</td>
+					<td>
+					<p>Stress transformation</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet11.pdf" target="_blank">WS #11: Pipe System</a></p>
+					</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>12</td>
+					<td>W</td>
+					<td>Apr 8</td>
+					<td>
+					<p>Stress transformation</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>HW #9: Combined loading</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>12</td>
+					<td>F</td>
+					<td>Apr 10</td>
+					<td>
+					<p><span style="color:rgb(0, 128, 0)"><em><strong>No class (Engineering Open House)</strong></em></span></p>
+					</td>
+					<td><strong style="color:rgb(255, 0, 0)">Quiz 5 (CBTF): Combined loading (HW 9)</strong></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>13</td>
+					<td>M</td>
+					<td>Apr 13</td>
+					<td>
+					<p><em style="color:rgb(0, 128, 0)"><strong>No lecture: In-class quiz 5 session</strong></em></p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet11.pdf" target="_blank">WS #11: Pipe System(continued)</a></p>
+		
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet11_Solution.pdf" target="_blank">Solution</a></p>
+					</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>13</td>
+					<td>W</td>
+					<td>Apr 15</td>
+					<td>
+					<p>Failure Theories</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>HW #10: Stress transformation and failure criteria</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>13</td>
+					<td>F</td>
+					<td>Apr 17</td>
+					<td>
+					<p>Failure Theories</p>
+					</td>
+					<td>
+					<p><strong style="color:rgb(255, 0, 0)">Quiz 5 retry&nbsp;</strong></p>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<!-- ###################################################################### --><!-- ###################################################################### -->
+				<tr class="evenWeek">
+					<td>14</td>
+					<td>M</td>
+					<td>Apr 20</td>
+					<td>
+					<p>Beam deflection</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<!--<td colspan="1" rowspan="3">WS #14: Guitar</td>-->
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet12.pdf" target="_blank">WS #12: Mohr&#39;s Circle</a></p>
+								<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet12_Solution.pdf" target="_blank">Solution</a></p>
+					</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>14</td>
+					<td>W</td>
+					<td>Apr 22</td>
+					<td>
+					<p>Beam deflection</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="evenWeek">
+					<td>14</td>
+					<td>F</td>
+					<td>Apr 69</td>
+					<td>
+					<p><em style="color:rgb(0, 128, 0)"><strong>No lecture: In-class quiz session</strong></em></p>
+					</td>
+					<td>
+					<p><strong style="color:rgb(255, 0, 0)">Quiz 6: Stress transformation and failure theories</strong></p>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<!-- ###################################################################### -->
+				<tr class="oddWeek">
+					<td>15</td>
+					<td>M</td>
+					<td>Apr 27</td>
+					<td>
+					<p>Beam deflection</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>HW #11: Beams Deflection - Part 1</td>
+					<td colspan="1" rowspan="3">
+					<p><a href="http://courses.grainger.illinois.edu/tam251/sp2024/secure/worksheets-archive/Worksheet13.pdf" target="_blank">WS #13: Tongs</p>
+					</td>
+					<!--<td colspan="1" rowspan="3">WS #13: Guitar</td>-->
+				</tr>
+				<tr class="oddWeek">
+					<td>15</td>
+					<td>W</td>
+					<td>Apr 29</td>
+					<td>
+					<p>Beam deflection</p>
+					</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr class="oddWeek">
+					<td>15</td>
+					<td>F</td>
+					<td>May 1</td>
+					<td>
+					<p>Beam deflection</p>
+					</td>
+					<td><strong style="color:rgb(255, 0, 0)">Quiz 6 retry&nbsp; &nbsp;&nbsp;</strong></td>
+					<td>HW #12: Beams Deflection - Part 2</td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>M</td>
+					<td>May 4</td>
+					<td>Buckling</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1"><em>no discussion</em></td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>W</td>
+					<td>May 6</td>
+					<td>Buckling/Review</td>
+					<td>&nbsp;</td>
+					<td>HW #13: Buckling</td>
+					<td colspan="1"><em>no discussion</em></td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>F</td>
+					<td>May 8</td>
+					<td><strong style="color:rgb(0, 128, 0)"><em>No Class</em></strong></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="1">&nbsp;</td>
+				</tr>
+				<!-- ###################################################################### -->
+			</tbody>
 	</DisplayTable>
 	
 	

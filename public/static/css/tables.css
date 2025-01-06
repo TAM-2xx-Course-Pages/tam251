@@ -3,12 +3,19 @@ tbody > tr > th:first-child{
     text-align: center;
 }
 
-table.first-bordered > tbody > tr > td[rowspan="7"]{
-    border-right: 1px solid var(--bs-border-color);
+tr.oddWeek > td{
+    background-color: var(--bs-table-striped-bg);
 }
 
-thead > tr > th:first-child{
-    border-right: 1px solid var(--bs-border-color);
+td{
+    display: table-cell;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border: 1px solid var(--bs-border-color);
+}
+
+p{
+    display: block;
 }
 
 thead > tr > th{
@@ -17,8 +24,4 @@ thead > tr > th{
 
 tbody > tr > td{
     text-align: center;
-}
-
-td[rowspan]:not(:empty){
-    border: 1px solid var(--bs-border-color);
 }
