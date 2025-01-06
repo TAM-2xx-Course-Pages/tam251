@@ -113,7 +113,8 @@ srcs = [
     'box.png',
     'icons/moon.png',
     'icons/sun.png',
-    'icons/list.png'
+    'icons/list.png',
+    'forms.png'
 ]
 
 for s in srcs:
